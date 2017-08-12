@@ -1,0 +1,5 @@
+NUGET
+  remote: https://barsgroup.myget.org/f/common/auth/3ef5eaa4-6139-4997-ad92-71947dcc67c0
+    Castle.Core (3.3.3)
+    Castle.Windsor (3.4.0)
+      Castle.Core (>= 3.3 < 4.0)
