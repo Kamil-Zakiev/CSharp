@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonDependsOnScoped", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientDependsOnTransient", "TransientDependsOnTransient\TransientDependsOnTransient.csproj", "{5F5DF55C-83AD-4E39-8766-A72D4CBE56CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientDependsOnScoped", "TransientDependsOnScoped\TransientDependsOnScoped.csproj", "{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{5F5DF55C-83AD-4E39-8766-A72D4CBE56CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F5DF55C-83AD-4E39-8766-A72D4CBE56CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F5DF55C-83AD-4E39-8766-A72D4CBE56CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
