@@ -118,10 +118,24 @@ namespace GetLoadAndLazyFetch
             // Хой-хой-хой если стратегия Fetch = Join, ведь данные уже подгружены
         }
 
+
+        /// <summary>
+        /// GetAll всегда откладывает подгрузку зависимых объектов вне зависимости от способа маппинга
+        /// </summary>
+        private static void Example6()
+        {
+            var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
+
+            var session = sessionFactory.OpenSession();
+            
+            var persons = session.Query<Person>().ToList();
+
+            session.Close();
+        }
+
         private static void Main(string[] args)
         {
-
-            Example5();
+            Example6();
         }
     }
 }
