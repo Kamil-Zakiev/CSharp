@@ -141,9 +141,66 @@ namespace Transactions
             session.Close();
         }
 
+
+        /// <summary>
+        ///     открытие транзакции блокирует чтение данных из БД, 
+        ///     поэтому если после Флаша выполняется откат, то состояние БД возвращается в исходное состояние
+        /// </summary>
+        private static void Example6()
+        {
+            var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
+
+            var session = sessionFactory.OpenSession();
+            var tx = session.BeginTransaction();
+            var book = session.Get<Book>(1l);
+            
+            book.Title = "Хоп!-хоп!-хоп!";
+            session.Flush();
+
+            tx.Rollback();
+
+            session.Close();
+        }
+
+
+        /// <summary>
+        ///     уровень изоляции транзакций ReadCommited гарантирует, что другие подключения к БД не смогу считать модиф. данные
+        ///     (изменная строка блокируется до окончания транзакции)
+        ///     если не использовать транзакции, то нет гарантии, то не будет грязного чтения
+        /// </summary>
+        private static void Example7()
+        {
+            var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
+
+            var session = sessionFactory.OpenSession();
+            var tx = session.BeginTransaction();
+            var book = session.Get<Book>(1l);
+
+            book.Title = "Хопееееее!-хоп!-хоп!";
+            session.Flush();
+
+            #region Изменения из второго подключения к БД
+
+            var session2 = sessionFactory.OpenSession();
+            //  var tx2 = session2.BeginTransaction();
+            var book2 = session2.Get<Book>(1l);
+
+            book2.Title = "Хоп?123!-хоп?!-хоп?!";
+
+            // session2.Flush();
+            // tx2.Commit();
+            session2.Close(); 
+
+            #endregion
+
+            tx.Rollback();
+
+            session.Close();
+        }
+
         private static void Main(string[] args)
         {
-            Example2();
+            Example7();
         }
     }
 }
