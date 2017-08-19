@@ -50,7 +50,6 @@ namespace SingletonDependsOnScoped
                     var scopedService = container.Resolve<IService2>();
                     Console.WriteLine(
                         $"Resolved by container directly scoped service has guidId = {scopedService.GuidId}");
-                    container.Release(scopedService);
                 }
 
             Console.WriteLine("==================================================\n");
