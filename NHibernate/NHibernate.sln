@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transactions", "Transaction
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetLoadAndLazyFetch", "GetLoad\GetLoadAndLazyFetch.csproj", "{86CFD5DB-7211-4591-A480-3F60BFABCC46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cache", "Cache\Cache.csproj", "{1D1A80FC-DDE7-4841-833E-60E8653657C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{86CFD5DB-7211-4591-A480-3F60BFABCC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86CFD5DB-7211-4591-A480-3F60BFABCC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86CFD5DB-7211-4591-A480-3F60BFABCC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1A80FC-DDE7-4841-833E-60E8653657C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1A80FC-DDE7-4841-833E-60E8653657C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1A80FC-DDE7-4841-833E-60E8653657C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1A80FC-DDE7-4841-833E-60E8653657C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
