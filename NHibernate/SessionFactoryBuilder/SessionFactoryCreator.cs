@@ -1,11 +1,22 @@
-﻿using EntitiesAndMaps.Books;
+﻿using System;
+using System.Linq;
+using EntitiesAndMaps.Books;
 using EntitiesAndMaps.Persons;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernate.Event;
 using NHibernate.Mapping.ByCode;
 
 namespace SessionFactoryBuilder
 {
+    internal class FlushEventListener : IFlushEventListener
+    {
+        public void OnFlush(FlushEvent @event)
+        {
+            Console.WriteLine("Flush!");
+        }
+    }
+
     public class SessionFactoryCreator
     {
         private static ISessionFactory _sessionFactory;
@@ -30,8 +41,13 @@ namespace SessionFactoryBuilder
 
                 d.ConnectionString = "Server=.;Initial Catalog=Library;Integrated Security=true";
                 d.LogSqlInConsole = true;
-
+                
             });
+
+            var oldListenets = cfg.EventListeners.FlushEventListeners.ToList();
+            oldListenets.Add(new FlushEventListener());
+
+            cfg.EventListeners.FlushEventListeners = oldListenets.ToArray();
 
             // указываем маппинги сущностей
             var modelMapper = new ModelMapper();

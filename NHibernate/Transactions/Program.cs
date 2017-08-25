@@ -200,7 +200,7 @@ namespace Transactions
 
         private static void Main(string[] args)
         {
-            Example7();
+            Example3();
         }
     }
 }
