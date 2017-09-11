@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Definition", "Definition\De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRetrieving", "DataRetrieving\DataRetrieving.csproj", "{08B7C081-F11B-45C1-A1C0-AA0E5E7B2F03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebuggerViewTest", "DebuggerViewTest\DebuggerViewTest.csproj", "{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{08B7C081-F11B-45C1-A1C0-AA0E5E7B2F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08B7C081-F11B-45C1-A1C0-AA0E5E7B2F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08B7C081-F11B-45C1-A1C0-AA0E5E7B2F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
