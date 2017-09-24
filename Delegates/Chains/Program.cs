@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Threading;
 
 namespace Chains
 {
@@ -29,7 +31,7 @@ namespace Chains
 
         private static void Main(string[] args)
         {
-            Example2();
+            Example5();
         }
 
         /// <summary> Создание цепочки </summary>
@@ -79,6 +81,86 @@ namespace Chains
             chain -= Method1;
             chain(1);
             // из цепочки "удалился" лишь последний экз делегата
+        }
+
+        /// <summary>
+        /// Проблема: возвращается результата последнего экземпляра делегата
+        /// </summary>
+        private static void Example3()
+        {
+            GetString chain = null;
+            chain += Method1;
+            chain += Method2;
+            var pr = new Program();
+            chain += pr.Method3;
+            chain += new Program().Method4;
+
+            var result = chain(1);
+            Console.WriteLine("result: {0}", result);
+        }
+
+
+        private static string Method5(int a)
+        {
+            Console.WriteLine("Method5 got " + a);
+            throw new Exception("Unhandled exception");
+
+        }
+
+        /// <summary>
+        /// Проблема: прерывание последующих вызовов
+        /// </summary>
+        private static void Example4()
+        {
+            GetString chain = null;
+            chain += Method1;
+            chain += Method2;
+            chain += Method5;
+            var pr = new Program();
+            chain += pr.Method3;
+            chain += new Program().Method4;
+
+            var result = chain(1);
+            Console.WriteLine("result: {0}", result);
+        }
+
+
+        /// <summary>
+        /// Решение проблем: явный перебор всех экземпляров делегата в цепочке
+        /// </summary>
+        private static void Example5()
+        {
+            GetString chain = null;
+            chain += Method1;
+            chain += Method2;
+            chain += Method5;
+            var pr = new Program();
+            chain += pr.Method3;
+            chain += new Program().Method4;
+            
+            var dels = chain.GetInvocationList();
+
+            var results = new List<string>();
+
+            foreach (var @delegate in dels)
+            {
+                var del = (GetString) @delegate;
+                try
+                {
+                    var result = del(1);
+                    results.Add(result);
+                }
+                catch (Exception e)
+                {
+                    results.Add(e.Message);
+                }
+            }
+
+            Console.WriteLine();
+            foreach (var result in results)
+            {
+                Console.WriteLine(result);
+            }
         }
     }
 }
