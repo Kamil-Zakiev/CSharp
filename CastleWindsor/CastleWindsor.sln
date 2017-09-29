@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientDependsOnTransient
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientDependsOnScoped", "TransientDependsOnScoped\TransientDependsOnScoped.csproj", "{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRegistrationSpecification", "GenericRegistrationSpecification\GenericRegistrationSpecification.csproj", "{3AA67CCC-E805-41BD-A4CC-6FAAAF1B2E44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0187254E-97A3-4C8E-B8D3-BDACDCB6A287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA67CCC-E805-41BD-A4CC-6FAAAF1B2E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA67CCC-E805-41BD-A4CC-6FAAAF1B2E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA67CCC-E805-41BD-A4CC-6FAAAF1B2E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA67CCC-E805-41BD-A4CC-6FAAAF1B2E44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
