@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covariance", "Covariance\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chains", "Chains\Chains.csproj", "{85D91AAB-C1C4-4E15-96BF-012EAE70927F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lambdas", "Lambdas\Lambdas.csproj", "{1F608618-D22D-4416-BCF4-4B84132B7190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvokeByReflection", "InvokeByReflection\InvokeByReflection.csproj", "{38EA8FC8-756D-4D94-BD20-B8419A98F51C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{85D91AAB-C1C4-4E15-96BF-012EAE70927F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85D91AAB-C1C4-4E15-96BF-012EAE70927F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85D91AAB-C1C4-4E15-96BF-012EAE70927F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F608618-D22D-4416-BCF4-4B84132B7190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F608618-D22D-4416-BCF4-4B84132B7190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F608618-D22D-4416-BCF4-4B84132B7190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F608618-D22D-4416-BCF4-4B84132B7190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38EA8FC8-756D-4D94-BD20-B8419A98F51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38EA8FC8-756D-4D94-BD20-B8419A98F51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38EA8FC8-756D-4D94-BD20-B8419A98F51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38EA8FC8-756D-4D94-BD20-B8419A98F51C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
