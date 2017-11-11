@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using SomeAssembly;
 
@@ -6,6 +7,8 @@ namespace AssembliesLoading
 {
     internal class Program
     {
+        static List<Type> types = new List<Type>();
+
         private static void Main(string[] args)
         {
             Example1();
@@ -14,7 +17,7 @@ namespace AssembliesLoading
         /// <summary>
         ///     Сборка загружается в домен при генерации машинного кода JIT-компилятором
         ///     Использование класса = создание экземпляра или вызов стат. метода
-        ///     а также использование информация о классе через отржение
+        ///     а также использование типа
         /// </summary>
         private static void Example1()
         {
@@ -25,10 +28,17 @@ namespace AssembliesLoading
             PrintAssemblesInCurrentAppDomain();
         }
 
+        /// <summary> Явная загрузка сборки </summary>
+        private static void Example2()
+        {
+            
+        }
+
         private static void Method()
         {
-            Console.WriteLine("Методы класса SomeClass:" + 
-                typeof(SomeClass).GetMethods().Select(x => x.Name).Aggregate((n1,n2) => n1 += "; "  + n2));
+            types.Add(typeof(SomeClass));
+
+            //Console.WriteLine("Методы класса SomeClass:" + typeof(SomeClass).GetMethods().Select(x => x.Name).Aggregate((n1,n2) => n1 += "; "  + n2));
 
             //var t = new SomeClass();
 
