@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.Remoting;
 using SomeAssembly;
 
 namespace AssembliesLoading
@@ -11,7 +13,7 @@ namespace AssembliesLoading
 
         private static void Main(string[] args)
         {
-            Example1();
+            Example3();
         }
 
         /// <summary>
@@ -31,8 +33,65 @@ namespace AssembliesLoading
         /// <summary> Явная загрузка сборки </summary>
         private static void Example2()
         {
-            
+            var assem = Assembly.Load("SomeAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
+            Console.WriteLine("Assembly was found at url: " + assem.CodeBase);
+            Console.WriteLine("Базовая папка текущего домена: " + AppDomain.CurrentDomain.BaseDirectory);
+
+            Console.WriteLine("Exported types:");
+            foreach (var assemExportedType in assem.ExportedTypes)
+            {
+                Console.WriteLine(assemExportedType.FullName);
+            }
         }
+
+        /// <summary> Создание экземпляра типа, определенного в загруженной сборке </summary>
+        private static void Example3()
+        {
+            var assem = Assembly.Load("SomeAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null");
+            PrintAssemblesInCurrentAppDomain();
+
+            // не дает загружать типы из другой сборки, хоть сборка и в домене
+            // требуется явно указать сборку
+            var someType = Type.GetType("SomeAssembly.SomeClass, SomeAssembly", true);
+
+            // var someType = assem.ExportedTypes.First(t => t.Name == "SomeClass");
+
+            object someInstance1 = System.Activator.CreateInstance(someType, 1, 2, 3);
+
+            // десериализованный объект ?
+            object someInstance2 = System.Activator.CreateInstance("SomeAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", 
+                "SomeAssembly.SomeClass")
+                .Unwrap();
+            // десериализованный объект - хотя мб хендлер указывает на объект в текущем домене
+            var isProxy = RemotingServices.IsTransparentProxy(someInstance2);
+
+            object someInstance3 = AppDomain.CurrentDomain.CreateInstanceAndUnwrap(
+                "SomeAssembly, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+                "SomeAssembly.SomeClass");
+            isProxy = RemotingServices.IsTransparentProxy(someInstance3);
+
+            object someInstance4 = someType.GetTypeInfo()
+                .DeclaredConstructors
+                .First()
+                .Invoke(null);
+
+            // создание экземпляра обощенного типа
+            object o5 = Activator.CreateInstance(typeof(List<>).MakeGenericType(typeof(int)));
+        }
+
+        /// <summary> Вызов метода </summary>
+        private static void Example4()
+        {
+
+        }
+
+        /// <summary> Вызов метода, предлагаемый Рихтером </summary>
+        private static void Example5()
+        {
+
+        }
+
+
 
         private static void Method()
         {
