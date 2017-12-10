@@ -15,7 +15,7 @@ namespace SimpleExample
             var stream = new MemoryStream();
             SerializeToMemory(obj, stream);
             
-            const string path = @"E:\Stash\CSharp\SerializationExamples\SimpleExample\store";
+            string path = AppDomain.CurrentDomain.BaseDirectory + "store";
             File.WriteAllBytes(path, stream.ToArray());
             
             stream = new MemoryStream();
