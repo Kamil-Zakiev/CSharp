@@ -19,9 +19,10 @@ class SimpleClass
     static void Main()
     {
         SimpleClass simpleObj = new SimpleClass();
+        simpleObj.l1 = 2;
 
 
-        
+
         return;
     }
 }
