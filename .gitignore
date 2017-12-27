@@ -5,3 +5,4 @@ obj/
 *.pdb
 .suo
 packages/
+.idea/
