@@ -1,18 +1,19 @@
-﻿namespace ThreadPoolUsage
-{
-    using System;
-    using System.Threading;
+﻿using System;
+using System.Threading;
 
+namespace ThreadPoolUsage
+{
     internal static class Program
     {
         private static void Main(string[] args)
         {
+            Example2();
         }
 
         /// <summary>
-        ///     Использование потока из пула с передачей параметров через замыкание.
-        ///     Поток фоновый, т.е. завершается, когда все активные потоки финишировали, хоть метод обратного вызова не выполнится
-        ///     до конца
+        ///     Использование потока из пула.
+        ///     Поток фоновый, т.е. завершается, когда все активные потоки финишировали,
+        ///     хоть метод обратного вызова не выполнится до конца
         /// </summary>
         private static void Example1()
         {
@@ -21,7 +22,6 @@
             Thread.Sleep(3000);
             // output: Program.Main finished!
         }
-
 
         /// <summary>
         ///     Необработанное исключение убивает процесс

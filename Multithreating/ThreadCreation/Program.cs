@@ -1,13 +1,13 @@
-﻿namespace ThreadCreation
-{
-    using System;
-    using System.Threading;
+﻿using System;
+using System.Threading;
 
+namespace ThreadCreation
+{
     internal class Program
     {
         private static void Main(string[] args)
         {
-            Example4();
+            Example5();
         }
 
         /// <summary>
@@ -16,7 +16,7 @@
         /// </summary>
         private static void Example1()
         {
-            var myThread = new Thread(() => { Start(1); });
+            var myThread = new Thread(() => { SomeMethod(1); });
             myThread.Start();
             Console.WriteLine("Program.Main finished!");
             // output: Program.Main finished!
@@ -30,7 +30,7 @@
         /// </summary>
         private static void Example2()
         {
-            var myThread = new Thread(() => { Start(1); });
+            var myThread = new Thread(() => { SomeMethod(1); });
             myThread.IsBackground = true;
             myThread.Start();
             Console.WriteLine("Program.Main finished!");
@@ -43,7 +43,7 @@
         /// </summary>
         private static void Example3()
         {
-            var myThread = new Thread(() => { Start(1); });
+            var myThread = new Thread(() => { SomeMethod(1); });
             myThread.IsBackground = true;
             myThread.Start();
             myThread.Join();
@@ -58,7 +58,7 @@
         /// </summary>
         private static void Example4()
         {
-            var myThread = new Thread(() => { Start(1); });
+            var myThread = new Thread(() => { SomeMethod(1); });
             myThread.Priority = ThreadPriority.Highest;
 
             myThread.Start();
@@ -69,7 +69,28 @@
             //         Method Program.Start() is running!
         }
 
-        private static void Start(int n)
+        /// <summary>
+        ///     Необработанное исключение убивает процесс
+        /// </summary>
+        private static void Example5()
+        {
+            var myThread = new Thread(() => { RaiseException(1); });
+
+            myThread.Start();
+
+            Console.WriteLine("Program.Main finished!");
+            // output: Program.Main finished!
+            //         Method Program.Start() got 1 as parameter
+            //         Method Program.Start() is running!
+        }
+
+        private static void RaiseException(object n)
+        {
+            Console.WriteLine("Method Program.RaiseException() got {0} as parameter", n);
+            throw new Exception();
+        }
+
+        private static void SomeMethod(int n)
         {
             Console.WriteLine("Method Program.Start() got {0} as parameter", n);
             // Thread.CurrentThread.Abort();
