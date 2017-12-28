@@ -12,6 +12,7 @@ namespace Cancellation
             var token = cts.Token;
             token.Register(() =>
             {
+                // вызывается в основном потоке
                 Console.WriteLine("Operation was cancelled");
                 throw new Exception();
             });
@@ -31,6 +32,9 @@ namespace Cancellation
             //               Необработанное исключение: Method Program.Start() is running...
             //               Method Program.Start() is completed!
             //               System.Exception: Выдано исключение типа "System.Exception".
+            
+            // подождём, пока поток из пула завершит свою работу
+            Thread.Sleep(200);
         }
     }
 }

@@ -7,20 +7,20 @@
     {
         private static void Main(string[] args)
         {
-            TaskExample3();
+            ThreadPoolExample3();
         }
         
         private static void Start(int n, CancellationToken cancellationToken)
         {
-            Console.WriteLine("Method Program.Start() got {0} as parameter", n);
+            Console.WriteLine("Method Program.Start got {0} as parameter", n);
 
             while (!cancellationToken.IsCancellationRequested)
             {
                 Thread.Sleep(500);
-                Console.WriteLine("Method Program.Start() is running...");
+                Console.WriteLine("Method Program.Start is running...");
             }
-
-            Console.WriteLine("Method Program.Start() is completed!");
+            //cancellationToken.ThrowIfCancellationRequested();
+            Console.WriteLine("Method Program.Start is completed!");
         }
     }
 }

@@ -10,9 +10,10 @@ namespace Cancellation
         {
             var cts = new CancellationTokenSource();
             var token = cts.Token;
+            var token2 = cts.Token;
             token.Register(() => { Console.WriteLine("Operation was cancelled"); });
 
-            ThreadPool.QueueUserWorkItem(x => { Start(123, token); });
+            ThreadPool.QueueUserWorkItem(x => { Start(123, token2); });
 
             Thread.Sleep(2000);
             cts.Cancel(true);
@@ -21,6 +22,11 @@ namespace Cancellation
             //         Method Program.Start() is running...
             //         Method Program.Start() is running...
             //         Operation was cancelled
+            //         Method Program.Start is running...
+            //         Method Program.Start is completed!
+            
+            // подождём, пока поток из пула завершит свою работу
+            Thread.Sleep(200);
         }
     }
 }

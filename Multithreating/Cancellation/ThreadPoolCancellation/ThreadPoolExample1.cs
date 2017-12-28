@@ -16,7 +16,11 @@ namespace Cancellation
             Thread.Sleep(2000);
 
             // вызываем отмену операции
-            cts.Cancel(true);
+            // throwOnFirstException: true - выброс исключения сразу, иначе - ошибка положится в список ошибок
+            cts.Cancel(throwOnFirstException: true); 
+            
+            // подождём, пока поток из пула завершит свою работу
+            Thread.Sleep(200);
         }
     }
 }
