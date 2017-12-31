@@ -7,7 +7,7 @@
     {
         private static void Main(string[] args)
         {
-            ThreadPoolExample3();
+            TaskExample3();
         }
         
         private static void Start(int n, CancellationToken cancellationToken)

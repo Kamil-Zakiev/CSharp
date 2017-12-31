@@ -12,6 +12,7 @@ namespace Cancellation
         {
             var cts = new CancellationTokenSource();
             var token = cts.Token;
+            token.Register(() => { Console.WriteLine("my registered method: Operation was cancelled"); });
             var task = new Task<int>(() => Sum(123, token), token);
             task.Start();
             Thread.Sleep(1000);

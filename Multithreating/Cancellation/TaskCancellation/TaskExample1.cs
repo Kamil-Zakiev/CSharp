@@ -9,6 +9,7 @@ namespace Cancellation
     {
         /// <summary>
         /// При отмене задания выкидывается исключение "Операция была отменена.", если использовать ThrowIfCancellationRequested
+        /// [Если этого не делать, то никаких исключений не будет] - пример далее  
         /// </summary>
         private static void TaskExample1()
         {
@@ -17,7 +18,7 @@ namespace Cancellation
             var task = new Task<int>(() => Sum(123, token));
             task.Start();
             Thread.Sleep(1000);
-            cts.Cancel();
+            cts.Cancel(true);
 
             try
             {

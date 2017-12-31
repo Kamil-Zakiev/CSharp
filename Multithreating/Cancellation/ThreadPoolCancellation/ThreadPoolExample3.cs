@@ -32,8 +32,8 @@ namespace Cancellation
             //               Необработанное исключение: Method Program.Start() is running...
             //               Method Program.Start() is completed!
             //               System.Exception: Выдано исключение типа "System.Exception".
-            
-            // подождём, пока поток из пула завершит свою работу
+
+            // подождём, пока поток из пула завершит свою работу, т.к. нет встроенного механизма одидания завершения
             Thread.Sleep(200);
         }
     }

@@ -7,7 +7,7 @@ namespace Tasks
     {
         private static void Main(string[] args)
         {
-            Example1();
+            Example5();
         }
 
         /// <summary> Долгоиграющая операция </summary>
