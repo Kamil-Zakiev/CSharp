@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks", "Tasks\Tasks.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticCtorAsConcurrent", "StaticCtorAsConcurrent\StaticCtorAsConcurrent.csproj", "{3A68BB41-57E4-44B3-9518-E4F1D89395BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskContinuasion", "TaskContinuasion\TaskContinuasion.csproj", "{4BF62CFC-7947-4457-884C-BEB340AC9B7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3A68BB41-57E4-44B3-9518-E4F1D89395BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A68BB41-57E4-44B3-9518-E4F1D89395BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A68BB41-57E4-44B3-9518-E4F1D89395BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF62CFC-7947-4457-884C-BEB340AC9B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF62CFC-7947-4457-884C-BEB340AC9B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF62CFC-7947-4457-884C-BEB340AC9B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF62CFC-7947-4457-884C-BEB340AC9B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
