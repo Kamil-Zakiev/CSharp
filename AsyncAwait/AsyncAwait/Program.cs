@@ -109,7 +109,7 @@ namespace AsyncAwait
             var stopWatch = new Stopwatch();
             stopWatch.Start();
 
-            var count = 16;
+            var count = 16*4;
             var tasks = new Task<int>[count];
             for (int i = 0; i < count; i++)
             {
