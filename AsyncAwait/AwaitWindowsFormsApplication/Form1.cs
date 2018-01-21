@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -10,6 +11,7 @@ namespace AwaitWindowsFormsApplication
 {
     public partial class Form1 : Form
     {
+        #region TestData
         private static readonly List<byte[]> _buffers = new List<byte[]>
         {
             new byte[9788 * 1024],
@@ -32,11 +34,24 @@ namespace AwaitWindowsFormsApplication
             @"G:\CSharp\AsyncAwait\AsyncAwait\file6.txt",
             @"G:\CSharp\AsyncAwait\AsyncAwait\file7.txt",
             @"G:\CSharp\AsyncAwait\AsyncAwait\file8.txt"
-        };
+        }; 
+        #endregion
 
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Log(int offset, string message)
+        {
+            var offsetStep = "____";
+            var offsetSb = new StringBuilder(offsetStep);
+            while (offset > 0)
+            {
+                offsetSb.Append(offsetStep);
+                offset--;
+            }
+            InfoBox.Items.Add(offsetSb.Append(message).ToString());
         }
 
         private void startButton_Click(object sender, EventArgs e)
@@ -50,11 +65,21 @@ namespace AwaitWindowsFormsApplication
             var i = j % 8;
             using (var fs = new FileStream(listOfFileNames[i], FileMode.Open, FileAccess.Read))
             {
-                InfoBox.Items.Add("Started #" + j + " by thread with id: " + Thread.CurrentThread.ManagedThreadId);
-                var bytes = await fs.ReadAsync(_buffers[i], 0, _buffers[i].Length);
-                InfoBox.Items.Add("...Continued #" + j + " by thread with id: " + Thread.CurrentThread.ManagedThreadId);
+                Log(1, $"Started #{j} by thread with id: {Thread.CurrentThread.ManagedThreadId}");
+                var bytes = await InnerAsync(i, fs, j);
+
+                Log(3, $"Continued #{j} by thread with id: {Thread.CurrentThread.ManagedThreadId}");
                 return bytes;
             }
+        }
+
+        private async Task<int> InnerAsync(int i, FileStream fs, int j)
+        {
+            // await Task.Delay(100); // <- why is it principal
+            Log(2, $"Executing #{j} by thread with id: {Thread.CurrentThread.ManagedThreadId}");
+            var bytes = await fs.ReadAsync(_buffers[i], 0, _buffers[i].Length);
+
+            return bytes;
         }
 
         private void MethodWithAsync()

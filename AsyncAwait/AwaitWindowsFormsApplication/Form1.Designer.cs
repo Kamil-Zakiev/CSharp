@@ -51,13 +51,13 @@
             this.InfoBox.FormattingEnabled = true;
             this.InfoBox.Location = new System.Drawing.Point(13, 43);
             this.InfoBox.Name = "InfoBox";
-            this.InfoBox.Size = new System.Drawing.Size(259, 199);
+            this.InfoBox.Size = new System.Drawing.Size(801, 394);
             this.InfoBox.TabIndex = 1;
             // 
             // WithoutContextSyncButton
             // 
             this.WithoutContextSyncButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.WithoutContextSyncButton.Location = new System.Drawing.Point(108, 14);
+            this.WithoutContextSyncButton.Location = new System.Drawing.Point(650, 14);
             this.WithoutContextSyncButton.Name = "WithoutContextSyncButton";
             this.WithoutContextSyncButton.Size = new System.Drawing.Size(164, 23);
             this.WithoutContextSyncButton.TabIndex = 2;
@@ -69,7 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(826, 462);
             this.Controls.Add(this.WithoutContextSyncButton);
             this.Controls.Add(this.InfoBox);
             this.Controls.Add(this.startButton);
