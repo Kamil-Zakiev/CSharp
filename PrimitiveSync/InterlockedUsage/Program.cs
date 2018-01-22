@@ -1,15 +1,13 @@
-﻿using System.Linq;
-using System.Text;
-using System.Threading;
-
-namespace InterlockedUsage
+﻿namespace InterlockedUsage
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            var mwr = new MultiWebRequests(); 
-            Thread.Sleep(10000);
+            var mwr = new MultiWebRequests();
+            while (true)
+            {
+            }
         }
     }
 }
