@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreadSharedDataTest",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSpinLockExample", "SimpleSpinLockExample\SimpleSpinLockExample.csproj", "{F4F92F18-BF8B-4F26-A596-CC835385D463}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterlockedPattern", "InterlockedPattern\InterlockedPattern.csproj", "{3F832573-A611-4FE4-B9ED-AFA8238C3385}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{F4F92F18-BF8B-4F26-A596-CC835385D463}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4F92F18-BF8B-4F26-A596-CC835385D463}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4F92F18-BF8B-4F26-A596-CC835385D463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F832573-A611-4FE4-B9ED-AFA8238C3385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F832573-A611-4FE4-B9ED-AFA8238C3385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F832573-A611-4FE4-B9ED-AFA8238C3385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F832573-A611-4FE4-B9ED-AFA8238C3385}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +58,6 @@ Global
 		{DFF65F9E-8343-4C0A-A2DC-004DBD02C70B} = {3530B723-FEDB-4D1D-942B-940A6E145F4E}
 		{D4FD7401-42E3-4A3F-8BE9-C2ABE799249B} = {8BF8A2CA-0575-41AD-AF4D-EC4212B6C764}
 		{F4F92F18-BF8B-4F26-A596-CC835385D463} = {8BF8A2CA-0575-41AD-AF4D-EC4212B6C764}
+		{3F832573-A611-4FE4-B9ED-AFA8238C3385} = {8BF8A2CA-0575-41AD-AF4D-EC4212B6C764}
 	EndGlobalSection
 EndGlobal

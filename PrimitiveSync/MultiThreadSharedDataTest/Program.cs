@@ -14,8 +14,8 @@ namespace MultiThreadSharedDataTest
             {
             }
 
-            Interlocked.Increment(ref _x);
-            //_x++;
+            //Interlocked.Increment(ref _x);
+            _x++;
         }
 
         public static void Main(string[] args)
@@ -24,8 +24,8 @@ namespace MultiThreadSharedDataTest
             for (var i = 0; i < count; i++)
                 new Thread(Method).Start();
 
-            Thread.Sleep(200);
             _flag = false;
+            Thread.Sleep(2000);
             Console.WriteLine("Expected Value:\t" + count);
             Console.WriteLine("Fact Value:\t" + _x);
         }

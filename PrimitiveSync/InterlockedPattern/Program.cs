@@ -2,22 +2,30 @@
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
+// ReSharper disable CompareOfFloatsByEqualityOperator
 
-namespace SimpleSpinLockExample
+namespace InterlockedPattern
 {
     internal class Program
     {
-        private static SimpleSpinLock mSimpleSpinLock;
-        
         private static bool _flag = true;
 
         private static double _x = 1.001;
 
-        private static void Locked(Action action)
+        private static double Multiple(ref double target, double value)
         {
-            mSimpleSpinLock.Enter();
-            action();
-            mSimpleSpinLock.Leave();
+            var currentValue = target;
+            double startValue;
+            double desiredValue;
+
+            do
+            {
+                startValue = currentValue;
+                desiredValue = startValue * value;
+                currentValue = Interlocked.CompareExchange(ref target, desiredValue, startValue);
+            } while (startValue != currentValue);
+
+            return desiredValue;
         }
 
         private static void Method()
@@ -27,32 +35,28 @@ namespace SimpleSpinLockExample
             {
             }
 
-            Locked(() =>
-            {
-                // Тут могут быть громоздкие вычисления
-                // Доступ к ресурсу в каждый момент времени имеет только один поток...
-                _x *= 1.001;
-                //Thread.Sleep(1);
-            });
+
+            Multiple(ref _x, 1.001);
+            //_x *= 1.001;
         }
 
-        private static void Main()
+        public static void Main(string[] args)
         {
-            const int count = 600;
+            const int count = 6000;
             var tasks = new Task[count];
             for (var i = 0; i < count; i++)
             {
                 tasks[i] = new Task(Method);
                 tasks[i].Start();
             }
-            
+
             _flag = false;
             var stopWatch = new Stopwatch();
             stopWatch.Start();
             
             Task.WaitAll(tasks);
 
-            Console.WriteLine("Elapsed ticks: " + stopWatch.ElapsedTicks); // 1k-10k
+            Console.WriteLine("Elapsed ticks: " + stopWatch.ElapsedTicks); // 
 
             var expected = Math.Pow(1.001, count + 1);
             Console.WriteLine("Equals:\t\t" + (Math.Abs(expected - _x) < 0.000000000001));
