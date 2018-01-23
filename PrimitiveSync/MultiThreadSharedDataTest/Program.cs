@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace MultiThreadSharedDataTest
 {
@@ -10,22 +11,25 @@ namespace MultiThreadSharedDataTest
 
         private static void Method()
         {
-            while (_flag)
-            {
-            }
+            while (_flag) { }
 
-            //Interlocked.Increment(ref _x);
-            _x++;
+            Interlocked.Increment(ref _x);
+            //_x++;
         }
 
         public static void Main(string[] args)
         {
-            const int count = 6;
+            const int count = 600;
+            var tasks = new Task[count];
             for (var i = 0; i < count; i++)
-                new Thread(Method).Start();
-
+            {
+                tasks[i] = new Task(Method);
+                tasks[i].Start();
+            }
+            
             _flag = false;
-            Thread.Sleep(2000);
+            Task.WaitAll(tasks);
+            
             Console.WriteLine("Expected Value:\t" + count);
             Console.WriteLine("Fact Value:\t" + _x);
         }
