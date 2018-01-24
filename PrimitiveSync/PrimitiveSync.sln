@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterlockedPattern", "Inter
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserModeConstructions", "UserModeConstructions", "{5B3C4450-AC60-436E-9F88-CCC4EBE7CFCF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KernelModeConstructions", "KernelModeConstructions", "{4C4004C0-ED04-4527-A461-3454B04F430C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterprocessExample", "InterprocessExample\InterprocessExample.csproj", "{EB535BDC-97BC-4C14-8CD4-84E81C59694F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{3F832573-A611-4FE4-B9ED-AFA8238C3385}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F832573-A611-4FE4-B9ED-AFA8238C3385}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F832573-A611-4FE4-B9ED-AFA8238C3385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB535BDC-97BC-4C14-8CD4-84E81C59694F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB535BDC-97BC-4C14-8CD4-84E81C59694F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB535BDC-97BC-4C14-8CD4-84E81C59694F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB535BDC-97BC-4C14-8CD4-84E81C59694F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +72,6 @@ Global
 		{FF5F6175-CA0F-4F4B-9231-0E81A624D3E5} = {5B3C4450-AC60-436E-9F88-CCC4EBE7CFCF}
 		{3530B723-FEDB-4D1D-942B-940A6E145F4E} = {5B3C4450-AC60-436E-9F88-CCC4EBE7CFCF}
 		{8BF8A2CA-0575-41AD-AF4D-EC4212B6C764} = {5B3C4450-AC60-436E-9F88-CCC4EBE7CFCF}
+		{EB535BDC-97BC-4C14-8CD4-84E81C59694F} = {4C4004C0-ED04-4527-A461-3454B04F430C}
 	EndGlobalSection
 EndGlobal
