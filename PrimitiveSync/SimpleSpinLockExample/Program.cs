@@ -52,7 +52,7 @@ namespace SimpleSpinLockExample
             
             Task.WaitAll(tasks);
 
-            Console.WriteLine("Elapsed ticks: " + stopWatch.ElapsedTicks); // 1k-10k
+            Console.WriteLine("Elapsed ticks: " + stopWatch.ElapsedTicks); // 1k-7k
 
             var expected = Math.Pow(1.001, count + 1);
             Console.WriteLine("Equals:\t\t" + (Math.Abs(expected - _x) < 0.000000000001));
