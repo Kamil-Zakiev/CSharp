@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsExample", "EventsExam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreExample", "SemaphoreExample\SemaphoreExample.csproj", "{97BC7338-F242-45E2-B878-0A954729D497}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MutexExamples", "MutexExamples", "{0C68C6B9-966C-499F-B7EF-C94EB8F55AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexThreadAttachedProperty", "MutexThreadAttachedProperty\MutexThreadAttachedProperty.csproj", "{34F52DA4-937C-4C48-AEE3-760944DC9895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,10 @@ Global
 		{97BC7338-F242-45E2-B878-0A954729D497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97BC7338-F242-45E2-B878-0A954729D497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97BC7338-F242-45E2-B878-0A954729D497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34F52DA4-937C-4C48-AEE3-760944DC9895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34F52DA4-937C-4C48-AEE3-760944DC9895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34F52DA4-937C-4C48-AEE3-760944DC9895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34F52DA4-937C-4C48-AEE3-760944DC9895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,5 +95,7 @@ Global
 		{EB535BDC-97BC-4C14-8CD4-84E81C59694F} = {4C4004C0-ED04-4527-A461-3454B04F430C}
 		{BFD0A3B4-C5B2-48DB-879E-B690A64283ED} = {4C4004C0-ED04-4527-A461-3454B04F430C}
 		{97BC7338-F242-45E2-B878-0A954729D497} = {4C4004C0-ED04-4527-A461-3454B04F430C}
+		{0C68C6B9-966C-499F-B7EF-C94EB8F55AC9} = {4C4004C0-ED04-4527-A461-3454B04F430C}
+		{34F52DA4-937C-4C48-AEE3-760944DC9895} = {0C68C6B9-966C-499F-B7EF-C94EB8F55AC9}
 	EndGlobalSection
 EndGlobal
