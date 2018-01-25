@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Tasks
@@ -14,10 +15,12 @@ namespace Tasks
             var task = new Task<int>(RaiseException, 182);
             task.Start(TaskScheduler.Current);
 
-            // task.Wait(); - необязательно, т.к. task.Result вызывает Wait()
             try
             {
-                Console.WriteLine(task.Result);
+                // Thread.Sleep(3000); //-  no exception
+                // Task.WaitAll(task); // exception
+                // task.Wait();// - is not necessary because task.Result calls Wait() // exception
+                Console.WriteLine(task.Result); // exception
             }
             catch (AggregateException aggregateException)
             {
