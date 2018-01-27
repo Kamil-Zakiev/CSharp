@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleHybridLock", "SimpleHybridLock\SimpleHybridLock.csproj", "{240915B9-8E5F-41BB-B79F-FB1356C5FD0A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultithreadUtils", "MultithreadUtils\MultithreadUtils.csproj", "{8EF24CFC-658D-4724-875A-9BB8E4BC797B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHybridLock", "SmartHybridLock\SmartHybridLock.csproj", "{D726AA15-2521-4EFD-88CD-20F649FD4B3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{240915B9-8E5F-41BB-B79F-FB1356C5FD0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{240915B9-8E5F-41BB-B79F-FB1356C5FD0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{240915B9-8E5F-41BB-B79F-FB1356C5FD0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF24CFC-658D-4724-875A-9BB8E4BC797B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF24CFC-658D-4724-875A-9BB8E4BC797B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF24CFC-658D-4724-875A-9BB8E4BC797B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF24CFC-658D-4724-875A-9BB8E4BC797B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D726AA15-2521-4EFD-88CD-20F649FD4B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D726AA15-2521-4EFD-88CD-20F649FD4B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D726AA15-2521-4EFD-88CD-20F649FD4B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D726AA15-2521-4EFD-88CD-20F649FD4B3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

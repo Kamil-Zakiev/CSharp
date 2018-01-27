@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading;
 
-namespace SimpleHybridLock
+namespace SmartHybridLock
 {
     internal class Program
     {
-        private static readonly SimpleHybridLock SimpleHybridLock = new SimpleHybridLock();
+        private static readonly SmartHybridLock SimpleHybridLock = new SmartHybridLock();
 
         private static readonly ManualResetEvent ManualResetEvent = new ManualResetEvent(false);
 
@@ -42,7 +42,7 @@ namespace SimpleHybridLock
             Console.WriteLine("\nThreads contest absence:");
             ManualResetEvent.Set();
 
-            for (int i = 0; i < 5; i++)
+            for (var i = 0; i < 5; i++)
             {
                 new Thread(Thread1).Start();
 
