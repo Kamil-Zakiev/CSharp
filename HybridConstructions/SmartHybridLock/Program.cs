@@ -5,7 +5,7 @@ namespace SmartHybridLock
 {
     internal class Program
     {
-        private static readonly SmartHybridLock SimpleHybridLock = new SmartHybridLock();
+        private static readonly SmartHybridLock SmartHybridLock = new SmartHybridLock();
 
         private static readonly ManualResetEvent ManualResetEvent = new ManualResetEvent(false);
 
@@ -13,9 +13,9 @@ namespace SmartHybridLock
         {
             ManualResetEvent.WaitOne();
 
-            SimpleHybridLock.Enter();
+            SmartHybridLock.Enter();
             // some work
-            SimpleHybridLock.Leave();
+            SmartHybridLock.Leave();
         }
 
         /// <summary>Конкуренция потоков </summary>
