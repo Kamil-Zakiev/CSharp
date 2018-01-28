@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartHybridLock", "SmartHyb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleCheckLocking", "DoubleCheckLocking\DoubleCheckLocking.csproj", "{9D6C7461-86AA-4B51-B583-5CC005AF1944}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SingletonImplementations", "SingletonImplementations", "{6436DF35-5E3D-4758-82AE-A88CC0ECC5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWay", "SimpleWay\SimpleWay.csproj", "{A9917FC8-DB13-4860-AE0D-4F769610BA24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoBlocking", "NoBlocking\NoBlocking.csproj", "{D527D17D-B201-48BA-920D-8FA96559ED0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +39,21 @@ Global
 		{9D6C7461-86AA-4B51-B583-5CC005AF1944}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D6C7461-86AA-4B51-B583-5CC005AF1944}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D6C7461-86AA-4B51-B583-5CC005AF1944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9917FC8-DB13-4860-AE0D-4F769610BA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9917FC8-DB13-4860-AE0D-4F769610BA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9917FC8-DB13-4860-AE0D-4F769610BA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9917FC8-DB13-4860-AE0D-4F769610BA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D527D17D-B201-48BA-920D-8FA96559ED0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D527D17D-B201-48BA-920D-8FA96559ED0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D527D17D-B201-48BA-920D-8FA96559ED0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D527D17D-B201-48BA-920D-8FA96559ED0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D6C7461-86AA-4B51-B583-5CC005AF1944} = {6436DF35-5E3D-4758-82AE-A88CC0ECC5A5}
+		{A9917FC8-DB13-4860-AE0D-4F769610BA24} = {6436DF35-5E3D-4758-82AE-A88CC0ECC5A5}
+		{D527D17D-B201-48BA-920D-8FA96559ED0D} = {6436DF35-5E3D-4758-82AE-A88CC0ECC5A5}
 	EndGlobalSection
 EndGlobal
