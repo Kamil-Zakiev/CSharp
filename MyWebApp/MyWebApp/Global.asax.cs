@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -14,24 +13,24 @@ namespace MyWebApp
         protected Global()
         {
             _appGuid = Guid.NewGuid();
-            Log("Global ctor");
-            Thread.Sleep(5000);
+            Logger.Log(_appGuid);
+        }
+        
+        
+        protected void Application_BeginRequest()
+        {
+            Logger.Log(_appGuid);
         }
 
-        private void Log(string methodName)
-        {
-            Console.WriteLine($"AppGuid: {_appGuid}: {methodName} was called by Thread #{Thread.CurrentThread.ManagedThreadId}." +
-                              $" Hashes: [HttpContext - {(object)Context?.GetHashCode() ?? "контекст пуст"}");
-        }
 
         ~Global()
         {
-            Log("Global finilize method");
+            Logger.Log(_appGuid);
         }
         
         protected void Application_Start()
         {
-            Log("Application_Start");
+            Logger.Log(_appGuid);
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
