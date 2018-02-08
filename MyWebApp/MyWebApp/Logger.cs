@@ -17,12 +17,12 @@ namespace MyWebApp
         
         public static void Log(Guid appGuid,[CallerFilePath] string callerFilePath = "",  [CallerMemberName]string callerMemberName = "")
         {
-            var csFile = callerFilePath.Split('\\').Last();
+          /*  var csFile = callerFilePath.Split('\\').Last();
             File.AppendAllLines(Path,
                 new[]
                 {
                     $"{csFile}, {callerMemberName}: {appGuid} was called by Thread #{Thread.CurrentThread.ManagedThreadId}"
-                });
+                });*/
         }
     }
 }
