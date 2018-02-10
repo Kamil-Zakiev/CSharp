@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
@@ -44,6 +45,13 @@ namespace MyWebApp
             // removing routes registrations enables custom http-handler execution at any route
             // hence mvc route system should explicitly ignore concrete path
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+        }
+        
+        
+        
+        protected void Application_End()
+        {
+            Logger.Log(_appGuid);
         }
     }
 }
