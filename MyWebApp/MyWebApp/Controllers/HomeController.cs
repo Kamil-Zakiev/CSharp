@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
+using MyWebApp.Filters;
 
 namespace MyWebApp.Controllers
 {
+    [MyActionFilter]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -21,6 +22,7 @@ namespace MyWebApp.Controllers
             return View();
         }
 
+        [MyActionFilter]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
