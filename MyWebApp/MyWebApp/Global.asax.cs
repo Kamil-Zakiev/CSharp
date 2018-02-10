@@ -40,7 +40,7 @@ namespace MyWebApp
         {
             Logger.Log(_appGuid);
             //AreaRegistration.RegisterAllAreas();
-            //GlobalConfiguration.Configure(WebApiConfig.Register);
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             
             // removing routes registrations enables custom http-handler execution at any route
             // hence mvc route system should explicitly ignore concrete path

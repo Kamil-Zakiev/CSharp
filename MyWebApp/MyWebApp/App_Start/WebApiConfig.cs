@@ -1,4 +1,7 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Filters;
+using System.Web.Mvc;
+using MyWebApp.Filters;
 
 namespace MyWebApp
 {
@@ -16,6 +19,8 @@ namespace MyWebApp
                 "api/{controller}/{id}",
                 new {id = RouteParameter.Optional}
             );
+            
+            GlobalFilters.Filters.Add(new MyActionFilterAttribute());
         }
     }
 }
