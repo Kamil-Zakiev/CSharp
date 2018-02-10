@@ -15,14 +15,15 @@ namespace MyWebApp
             Logger.Log(_handlerGuidId);
             var request = context.Request;
             var response = context.Response;
-            
+
+            var info = context.Request.UserHostAddress + "<br/>" + context.Request.UserAgent;
             
             // This handler is called whenever a file ending 
             // in .sample is requested. A file with that extension
             // does not need to exist.
             response.Write("<html>");
             response.Write("<body>");
-            response.Write("<h1>Hello from a synchronous custom HTTP handler.</h1>");
+            response.Write(info);
             response.Write("</body>");
             response.Write("</html>");
         }

@@ -9,6 +9,8 @@ namespace MyWebApp
     public static class Logger
     {
         private const string Path = @"G:\CSharp\MyWebApp\MyWebApp\log.txt";
+        
+        private static readonly object _lock = new object();
 
         static Logger()
         {
@@ -17,12 +19,18 @@ namespace MyWebApp
         
         public static void Log(Guid appGuid,[CallerFilePath] string callerFilePath = "",  [CallerMemberName]string callerMemberName = "")
         {
-          /*  var csFile = callerFilePath.Split('\\').Last();
-            File.AppendAllLines(Path,
-                new[]
-                {
-                    $"{csFile}, {callerMemberName}: {appGuid} was called by Thread #{Thread.CurrentThread.ManagedThreadId}"
-                });*/
+            var time = DateTime.Now;
+            lock (_lock)
+            {
+                var csFile = callerFilePath.Split('\\').Last();
+                File.AppendAllLines(Path,
+                    new[]
+                    {
+                        $"{time}: {csFile}, {callerMemberName}: {appGuid} was called by Thread #{Thread.CurrentThread.ManagedThreadId}"
+                    });
+            }
+            
+           
         }
     }
 }

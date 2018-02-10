@@ -21,6 +21,13 @@ namespace MyWebApp
         {
             Logger.Log(_appGuid);
         }
+        
+        protected void Application_AuthenticateRequest()
+        {
+            Logger.Log(_appGuid);
+        }
+        
+        
 
 
         ~Global()
@@ -31,8 +38,11 @@ namespace MyWebApp
         protected void Application_Start()
         {
             Logger.Log(_appGuid);
-            AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+            //AreaRegistration.RegisterAllAreas();
+            //GlobalConfiguration.Configure(WebApiConfig.Register);
+            
+            // removing routes registrations enables custom http-handler execution at any route
+            // hence mvc route system should explicitly ignore concrete path
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }

@@ -16,7 +16,14 @@ namespace MyWebApp
         {
             Logger.Log(_appGuid);
             app.BeginRequest += BeginRequest;
+            app.AuthenticateRequest += AppOnAuthenticateRequest;
         }
+
+        private void AppOnAuthenticateRequest(object sender, EventArgs eventArgs)
+        {
+            Logger.Log(_appGuid);
+        }
+
         public void Dispose()
         {
             Logger.Log(_appGuid);
