@@ -12,11 +12,12 @@ namespace SingletonDependsOnTransient
         {
             Console.WriteLine("==================================================");
 
-            for (var i = 0; i < 10; i++)
+            for (var i = 0; i < 3; i++)
             {
                 var singletonService = container.Resolve<IService1>();
-               // var hasTrack = container.Kernel.ReleasePolicy.HasTrack(singletonService);
-               // Console.WriteLine($"hastrack singleton = {hasTrack}");
+                
+                var hasTrack = container.Kernel.ReleasePolicy.HasTrack(singletonService.Service2);
+                Console.WriteLine($"has track transient = {hasTrack}");
                 Console.WriteLine($"Dependent transient service2 has guidId = {singletonService.Service2.GuidId}");
             }
 

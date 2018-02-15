@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../..">
-      <sourceFolder url="file://$MODULE_DIR$/../../GenericRegistrationSpecification" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../SingletonDependsOnScoped" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../SingletonDependsOnTransient" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../TransientDependsOnScoped" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../TransientDependsOnTransient" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../TransientDiposableHolding" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../TransientHolding" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/../../GenericRegistrationSpecification/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../GenericRegistrationSpecification/obj" />
-      <excludeFolder url="file://$MODULE_DIR$/../../SingletonDependsOnScoped/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../SingletonDependsOnScoped/obj" />
-      <excludeFolder url="file://$MODULE_DIR$/../../SingletonDependsOnTransient/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../SingletonDependsOnTransient/obj" />
-      <excludeFolder url="file://$MODULE_DIR$/../../TransientDependsOnScoped/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../TransientDependsOnScoped/obj" />
-      <excludeFolder url="file://$MODULE_DIR$/../../TransientDependsOnTransient/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../TransientDependsOnTransient/obj" />
-      <excludeFolder url="file://$MODULE_DIR$/../../TransientDiposableHolding/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../TransientDiposableHolding/obj" />
-      <excludeFolder url="file://$MODULE_DIR$/../../TransientHolding/bin" />
-      <excludeFolder url="file://$MODULE_DIR$/../../TransientHolding/obj" />
-      <excludeFolder url="file://$MODULE_DIR$/../../packages" />
-    </content>
+    <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

@@ -10,15 +10,16 @@ namespace SingletonDependsOnScoped
     internal class Program
     {
         /// <summary>
-        ///     Если Транзиентный компонент, реализующий IDisposable (имеющий IDisposable-зависимость),
-        ///     то контейнер будет держать ссылки на Scoped-зависимости (хоть у них и вызван Dispose)
-        ///    В Б4 NH-сессия и ISessionProvider - имеет Lifestyle = Scoped, поэтому если транзиентный сервис будет иметь зависиомть 
-        ///  от сессии, то будет утечка(ведь сессия держит кэш), если не вызвать явный Release
+        ///     Если Транзиентный компонент реализует IDisposable (или имеет зависимость от IDisposable компонента),
+        ///     то контейнер будет удерживать ссылки на Scoped-зависимости (хоть у них и вызван Dispose)
+        ///     В Б4 NH-сессия и ISessionProvider - имеет Lifestyle = SessionScoped,
+        ///     поэтому если транзиентный сервис будет иметь зависимоть от сессии,
+        ///     то будет утечка (ведь сессия держит кэш), если не вызвать явный Release
         /// </summary>
         private static void Main(string[] args)
         {
             var container = new WindsorContainer();
-            
+
             container.Register(Component.For<IService1>().ImplementedBy<Component1>().LifeStyle.Transient);
 
             // регистрируем сервис с Lifestyle = Scoped
@@ -40,14 +41,12 @@ namespace SingletonDependsOnScoped
             Console.WriteLine("==================================================");
 
             for (var i = 0; i < 3; i++)
-            {
                 using (container.BeginScope())
                 {
                     Console.WriteLine();
                     var transientService = container.Resolve<IService1>();
                     Console.WriteLine($"Dependent scoped service2 has guidId = {transientService.Service2.GuidId}");
                 }
-            }
 
             Console.WriteLine("==================================================\n");
         }

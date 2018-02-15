@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientDependsOnScoped", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRegistrationSpecification", "GenericRegistrationSpecification\GenericRegistrationSpecification.csproj", "{3AA67CCC-E805-41BD-A4CC-6FAAAF1B2E44}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LifestyleCases", "LifestyleCases", "{34165175-7ED3-4103-A07B-ABA275244C19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E03401E-3E31-4B46-9D29-EB2969F425F7} = {34165175-7ED3-4103-A07B-ABA275244C19}
+		{70A460DF-355E-459B-93D7-0D04A547B92D} = {34165175-7ED3-4103-A07B-ABA275244C19}
+		{0187254E-97A3-4C8E-B8D3-BDACDCB6A287} = {34165175-7ED3-4103-A07B-ABA275244C19}
+		{5F5DF55C-83AD-4E39-8766-A72D4CBE56CC} = {34165175-7ED3-4103-A07B-ABA275244C19}
+		{47EE8A12-72AB-400E-8567-9BB01DE4D6EF} = {34165175-7ED3-4103-A07B-ABA275244C19}
+		{37AACCBD-A369-4E92-BD00-ADC9F7D84460} = {34165175-7ED3-4103-A07B-ABA275244C19}
 	EndGlobalSection
 EndGlobal

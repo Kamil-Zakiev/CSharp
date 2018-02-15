@@ -3,7 +3,7 @@ using SingletonDependsOnTransient.Services;
 
 namespace SingletonDependsOnTransient.Components
 {
-    internal class Component1 : IService1
+    internal class Component1 : IService1, IDisposable
     {
         private readonly Guid _guidId;
 
