@@ -2,8 +2,15 @@
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 
-namespace GenericRegistrationSpecification
+namespace GenericCases
 {
+    #region classes, interfaces
+
+    public class Department
+    {
+        
+    }
+    
     public interface IDomainService<T>
     {
     }
@@ -25,13 +32,15 @@ namespace GenericRegistrationSpecification
     {
     }
 
-    public interface IDeptDomainService : INsiDomainService<object>, IFbDomainService<object>
+    public interface IDeptDomainService : INsiDomainService<Department>, IFbDomainService<Department>
     {
     }
 
     public class DeptDomainService : IDeptDomainService
     {
     }
+
+    #endregion
 
 
     internal class Program
@@ -41,25 +50,29 @@ namespace GenericRegistrationSpecification
             Example1();
         }
 
-        /// <summary> При резолве generic-компонента отдается предпочтение закрытому типу вне зависимости от порядка регистрации</summary>
+        /// <summary>
+        ///     При резолве generic-компонента отдается предпочтение закрытому типу вне зависимости от порядка регистрации
+        /// </summary>
         public static void Example1()
         {
             var container = new WindsorContainer();
 
-            // регистарция generic-компонента
-            container.Register(Component.For(typeof(IDomainService<>)).Forward(typeof(INsiDomainService<>))
-                .ImplementedBy(typeof(FbNsiDomainService<>))
-                // IsDefault - ни на что не влияет
-                .IsDefault()
-            );
+            var reg1 = Component.For(typeof(INsiDomainService<>)).ImplementedBy(typeof(FbNsiDomainService<>)).IsDefault();
+            var reg2 = Component.For(typeof(INsiDomainService<Department>)).ImplementedBy(typeof(DeptDomainService));
+            
+            // регистрация generic-компонента (IsDefault - ни на что не влияет)
+            container.Register(reg1);
 
             // регистрация компонента с закрытым типом
-            var reg2 = Component.For(typeof(INsiDomainService<object>)).ImplementedBy(typeof(DeptDomainService));
             container.Register(reg2);
 
-            var impl = container.Resolve<INsiDomainService<object>>();
+            // так нельзя, нужно использовать Forward, иначе будет ошибка: Component GenericCases.DeptDomainService could not be registered. There is already a component with that name.
+//            var reg3 = Component.For(typeof(IDomainService<Department>)).ImplementedBy(typeof(DeptDomainService));
+//            container.Register(reg3);
+
+            var impl = container.Resolve<INsiDomainService<Department>>();
             Console.WriteLine($"Resolved component type: {impl.GetType()}");
-            // output: Resolved component type: GenericRegistrationSpecification.DeptDomainService
+            // output: Resolved component type: GenericCases.DeptDomainService
 
             container.Dispose();
         }
@@ -72,21 +85,15 @@ namespace GenericRegistrationSpecification
         {
             var container = new WindsorContainer();
 
-            container.Register(
-                Component.For<IDomainService<object>>()
-                    .Forward<INsiDomainService<object>>()
-                    .ImplementedBy<FbNsiDomainService<object>>()
-            );
-
-            var reg2 = Component.For(typeof(INsiDomainService<object>)).ImplementedBy(typeof(DeptDomainService))
-                .IsDefault();
+            var reg1 = Component.For<INsiDomainService<Department>>().ImplementedBy<FbNsiDomainService<Department>>();
+            var reg2 = Component.For(typeof(INsiDomainService<Department>)).ImplementedBy(typeof(DeptDomainService)).IsDefault();
+            
+            container.Register(reg1);
             container.Register(reg2);
 
-            var impl = container.Resolve<INsiDomainService<object>>();
+            var impl = container.Resolve<INsiDomainService<Department>>();
             Console.WriteLine($"Resolved component type: {impl.GetType()}");
-            // output: Resolved component type: GenericRegistrationSpecification.FbNsiDomainService`1[System.Object]
-
-            container.Dispose();
+            // output: Resolved component type: GenericCases.FbNsiDomainService`1[System.Object]
         }
     }
 }

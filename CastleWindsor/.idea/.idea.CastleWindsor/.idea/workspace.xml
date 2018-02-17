@@ -12,109 +12,40 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Program.cs">
+        <entry file="file://$PROJECT_DIR$/Registrations/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="180">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
-                <marker date="1518717668526" expanded="false" signature="6:194" ph="..." />
-                <marker date="1518717668526" expanded="true" signature="230:2462" ph="{...}" />
-                <marker date="1518717668526" expanded="true" signature="259:2460" ph="{...}" />
-                <marker date="1518717668526" expanded="true" signature="274:788" ph="///     Если Транзиентный компонент реализует IDisposable (или имеет зависимость от IDisposable компонента), ... " />
-                <marker date="1518717668526" expanded="true" signature="836:1581" ph="{...}" />
-                <marker date="1518717668526" expanded="true" signature="1644:2194" ph="{...}" />
-                <marker date="1518717668526" expanded="true" signature="1827:2096" ph="{...}" />
-                <marker date="1518717668526" expanded="true" signature="2268:2454" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Component1.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-              <folding>
-                <marker date="1503149638614" expanded="true" signature="6:54" ph="..." />
-                <marker date="1503149638614" expanded="true" signature="101:757" ph="{...}" />
-                <marker date="1503149638614" expanded="true" signature="145:755" ph="{...}" />
-                <marker date="1503149638614" expanded="true" signature="219:359" ph="{...}" />
-                <marker date="1503149638614" expanded="true" signature="382:482" ph="{...}" />
-                <marker date="1503149638614" expanded="true" signature="553:652" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Component2.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component2.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding>
-                <marker date="1518717610132" expanded="true" signature="6:54" ph="..." />
-                <marker date="1518717610132" expanded="true" signature="101:660" ph="{...}" />
-                <marker date="1518717610132" expanded="true" signature="145:658" ph="{...}" />
-                <marker date="1518717610132" expanded="true" signature="219:359" ph="{...}" />
-                <marker date="1518717610132" expanded="true" signature="382:482" ph="{...}" />
-                <marker date="1518717610132" expanded="true" signature="553:652" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Component3.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component3.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1503149626789" expanded="false" signature="6:54" ph="..." />
-                <marker date="1503149626789" expanded="true" signature="101:660" ph="{...}" />
-                <marker date="1503149626789" expanded="true" signature="145:658" ph="{...}" />
-                <marker date="1503149626789" expanded="true" signature="219:359" ph="{...}" />
-                <marker date="1503149626789" expanded="true" signature="382:482" ph="{...}" />
-                <marker date="1503149626789" expanded="true" signature="553:652" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IService1.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-              <folding>
-                <marker date="1503149448974" expanded="true" signature="58:176" ph="{...}" />
-                <marker date="1503149448974" expanded="true" signature="121:174" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IService2.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService2.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding>
-                <marker date="1503149448964" expanded="true" signature="58:135" ph="{...}" />
-                <marker date="1503149448964" expanded="true" signature="121:133" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IService3.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService3.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding>
-                <marker date="1503149601716" expanded="true" signature="58:133" ph="{...}" />
-                <marker date="1503149601716" expanded="true" signature="119:131" ph="{...}" />
+                <marker date="1518876394051" expanded="false" signature="6:136" ph="..." />
+                <marker date="1518876394051" expanded="true" signature="161:5802" ph="{...}" />
+                <marker date="1518876394051" expanded="false" signature="168:769" ph="interfaces, classes" />
+                <marker date="1518876394051" expanded="true" signature="231:243" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="279:291" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="346:358" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="414:426" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="453:521" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="549:631" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="658:670" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="697:709" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="741:753" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="797:5800" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="850:894" ph="{...}" />
+                <marker date="1518876394051" expanded="false" signature="989:1313" ph="{...}" />
+                <marker date="1518876394051" expanded="false" signature="1440:1916" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="1656:1808" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="1840:1906" ph="{...}" />
+                <marker date="1518876394051" expanded="false" signature="2047:2563" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="2364:2434" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="2487:2553" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="2573:2760" ph="///     Регистрация по нескольким интерфейсам, резолв скоупт-компонентов возвращает один и тот же объект по разны ... " />
+                <marker date="1518876394051" expanded="false" signature="2799:3460" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="3470:3671" ph="///     IsDefault определяет, какой экземпляр какого типа будет создаваться при Resolve, по умолчанию первая ... " />
+                <marker date="1518876394051" expanded="false" signature="3710:4145" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="4155:4353" ph="///     IsFallback делает регистрацию сервисов резервной, т.е. эта регистрация сработает, если нет иных регистрац ... " />
+                <marker date="1518876394051" expanded="false" signature="4392:4968" ph="{...}" />
+                <marker date="1518876394051" expanded="true" signature="4978:5165" ph="///     Регистрация по нескольким интерфейсам, резолв скоупт-компонентов возвращает один и тот же объект по разны ... " />
+                <marker date="1518876394051" expanded="false" signature="5204:5794" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -122,16 +53,30 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>GenericRegistrationSpecification</find>
+      <find>qweInterface</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>GenericCases</replace>
+    </replaceStrings>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCF17135-A1C4-47A8-A355-E7A73BE89297/ba/b6952d9d/ComponentRegistration`1.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/TransientHolding/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Registrations/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDiposableHolding/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDependsOnTransient/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -146,12 +91,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs" />
         <option value="$PROJECT_DIR$/SingletonDependsOnScoped/Program.cs" />
         <option value="$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component1.cs" />
         <option value="$PROJECT_DIR$/SingletonDependsOnTransient/Program.cs" />
         <option value="$PROJECT_DIR$/TransientDependsOnScoped/Components/Component2.cs" />
         <option value="$PROJECT_DIR$/TransientDependsOnScoped/Program.cs" />
+        <option value="$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs" />
+        <option value="$PROJECT_DIR$/Registrations/Program.cs" />
       </list>
     </option>
   </component>
@@ -187,12 +133,18 @@
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (7 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (7 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="LifestyleCases" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Registration examples" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="CastleWindsor (8 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Registration examples" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Registrations" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -218,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.LifestyleCases\TransientDependsOnScoped">
+  <component name="RunManager" selected=".NET Project.Registration examples\Registrations">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -294,20 +246,20 @@
       <option name="PROJECT_KIND" value="Console" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.0" />
     </configuration>
-    <configuration name="TransientHolding" type="DotNetProject" factoryName=".NET Project" temporary="true">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/TransientHolding/bin/Debug/TransientHolding.exe" />
+    <configuration name="Registration examples\Registrations" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Registrations/bin/Debug/Registrations.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TransientHolding/bin/Debug" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Registrations/bin/Debug" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <envs />
       <option name="USE_MONO" value="0" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/TransientHolding/TransientHolding.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Registrations/Registrations.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.0" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
     </configuration>
     <configuration default="true" type="DotNetProject" factoryName=".NET Project">
       <option name="PROJECT_PATH" value="" />
@@ -370,19 +322,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
-      <item index="1" class="java.lang.String" itemvalue=".NET Project.TransientHolding" />
-      <item index="2" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
-      <item index="3" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnScoped" />
-      <item index="4" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnTransient" />
-      <item index="5" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\TransientDependsOnScoped" />
+      <item index="1" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
+      <item index="2" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnScoped" />
+      <item index="3" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnTransient" />
+      <item index="4" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\TransientDependsOnScoped" />
+      <item index="5" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\TransientDependsOnScoped" />
-        <item index="1" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnTransient" />
-        <item index="2" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnScoped" />
-        <item index="3" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
-        <item index="4" class="java.lang.String" itemvalue=".NET Project.TransientHolding" />
+        <item index="0" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
+        <item index="1" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
+        <item index="2" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\TransientDependsOnScoped" />
+        <item index="3" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnTransient" />
+        <item index="4" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnScoped" />
       </list>
     </recent_temporary>
   </component>
@@ -406,7 +358,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5390000" />
+    <option name="totallyTimeSpent" value="13428000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,23 +378,38 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.371875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.371875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17963752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +419,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -469,20 +438,24 @@
         <state relative-caret-position="765">
           <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
           <folding>
-            <marker date="1506749115176" expanded="false" signature="6:74" ph="..." />
-            <marker date="1506749115176" expanded="true" signature="118:2927" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="159:171" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="234:246" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="309:321" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="382:394" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="477:489" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="584:596" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="653:665" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="694:2925" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="747:791" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="969:1842" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="1852:2100" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
-            <marker date="1506749115176" expanded="true" signature="2138:2919" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="6:74" ph="..." />
+            <marker date="1518854578880" expanded="true" signature="98:3203" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="105:756" ph="classes, interfaces" />
+            <marker date="1518854578880" expanded="true" signature="161:182" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="226:238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="301:313" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="376:388" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="449:461" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="544:556" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="659:671" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="728:740" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="785:3201" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="838:882" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="892:1051" ph="///     При резолве generic-компонента отдается предпочтение закрытому типу вне зависимости от порядка регистраци ... " />
+            <marker date="1518854578880" expanded="true" signature="1089:2238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="1632:1962" ph="/* так нельзя, нужно использовать Forward, иначе будет ошибка: Component GenericCases.DeptDomainService could not ... */" />
+            <marker date="1518854578880" expanded="true" signature="2248:2496" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
+            <marker date="1518854578880" expanded="true" signature="2534:3195" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -500,29 +473,25 @@
         <state relative-caret-position="765">
           <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
           <folding>
-            <marker date="1506749115176" expanded="false" signature="6:74" ph="..." />
-            <marker date="1506749115176" expanded="true" signature="118:2927" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="159:171" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="234:246" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="309:321" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="382:394" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="477:489" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="584:596" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="653:665" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="694:2925" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="747:791" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="969:1842" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="1852:2100" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
-            <marker date="1506749115176" expanded="true" signature="2138:2919" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="6:74" ph="..." />
+            <marker date="1518854578880" expanded="true" signature="98:3203" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="105:756" ph="classes, interfaces" />
+            <marker date="1518854578880" expanded="true" signature="161:182" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="226:238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="301:313" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="376:388" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="449:461" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="544:556" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="659:671" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="728:740" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="785:3201" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="838:882" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="892:1051" ph="///     При резолве generic-компонента отдается предпочтение закрытому типу вне зависимости от порядка регистраци ... " />
+            <marker date="1518854578880" expanded="true" signature="1089:2238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="1632:1962" ph="/* так нельзя, нужно использовать Forward, иначе будет ошибка: Component GenericCases.DeptDomainService could not ... */" />
+            <marker date="1518854578880" expanded="true" signature="2248:2496" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
+            <marker date="1518854578880" expanded="true" signature="2534:3195" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TransientHolding/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -531,20 +500,24 @@
         <state relative-caret-position="148">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <marker date="1506749115176" expanded="false" signature="6:74" ph="..." />
-            <marker date="1506749115176" expanded="true" signature="118:2927" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="159:171" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="234:246" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="309:321" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="382:394" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="477:489" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="584:596" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="653:665" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="694:2925" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="747:791" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="969:1842" ph="{...}" />
-            <marker date="1506749115176" expanded="true" signature="1852:2100" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
-            <marker date="1506749115176" expanded="true" signature="2138:2919" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="6:74" ph="..." />
+            <marker date="1518854578880" expanded="true" signature="98:3203" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="105:756" ph="classes, interfaces" />
+            <marker date="1518854578880" expanded="true" signature="161:182" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="226:238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="301:313" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="376:388" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="449:461" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="544:556" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="659:671" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="728:740" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="785:3201" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="838:882" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="892:1051" ph="///     При резолве generic-компонента отдается предпочтение закрытому типу вне зависимости от порядка регистраци ... " />
+            <marker date="1518854578880" expanded="true" signature="1089:2238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="1632:1962" ph="/* так нельзя, нужно использовать Forward, иначе будет ошибка: Component GenericCases.DeptDomainService could not ... */" />
+            <marker date="1518854578880" expanded="true" signature="2248:2496" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
+            <marker date="1518854578880" expanded="true" signature="2534:3195" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -555,7 +528,6 @@
           <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
           <folding>
             <marker date="1518716034286" expanded="false" signature="6:194" ph="..." />
-            <marker date="1518716034286" expanded="true" signature="230:2813" ph="{...}" />
             <marker date="1518716034286" expanded="true" signature="259:2811" ph="{...}" />
             <marker date="1518716034286" expanded="true" signature="274:943" ph="///     Регистрируя для Singleton-сервиса зависимость от Scoped-сервиса, мы тем самым продлеваем жизнь ... " />
             <marker date="1518716034286" expanded="true" signature="991:1709" ph="{...}" />
@@ -572,7 +544,6 @@
         <state relative-caret-position="60">
           <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
           <folding>
-            <marker date="1502527869131" expanded="true" signature="58:174" ph="{...}" />
             <marker date="1502527869131" expanded="true" signature="119:172" ph="{...}" />
           </folding>
         </state>
@@ -584,7 +555,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1502527851930" expanded="false" signature="6:54" ph="..." />
-            <marker date="1502527851930" expanded="true" signature="101:660" ph="{...}" />
             <marker date="1502527851930" expanded="true" signature="145:658" ph="{...}" />
             <marker date="1502527851930" expanded="true" signature="219:359" ph="{...}" />
             <marker date="1502527851930" expanded="true" signature="382:482" ph="{...}" />
@@ -599,7 +569,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1502525964935" expanded="false" signature="6:54" ph="..." />
-            <marker date="1502525964935" expanded="true" signature="101:709" ph="{...}" />
             <marker date="1502525964935" expanded="true" signature="145:707" ph="{...}" />
             <marker date="1502525964935" expanded="true" signature="219:359" ph="{...}" />
             <marker date="1502525964935" expanded="true" signature="382:482" ph="{...}" />
@@ -613,7 +582,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1502523172604" expanded="true" signature="61:140" ph="{...}" />
             <marker date="1502523172604" expanded="true" signature="97:138" ph="{...}" />
           </folding>
         </state>
@@ -625,7 +593,6 @@
           <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
           <folding>
             <marker date="1518716525506" expanded="true" signature="6:57" ph="..." />
-            <marker date="1518716525506" expanded="true" signature="107:728" ph="{...}" />
             <marker date="1518716525506" expanded="true" signature="164:726" ph="{...}" />
             <marker date="1518716525506" expanded="true" signature="238:378" ph="{...}" />
             <marker date="1518716525506" expanded="true" signature="401:501" ph="{...}" />
@@ -640,7 +607,6 @@
           <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
           <folding>
             <marker date="1502523172559" expanded="false" signature="6:57" ph="..." />
-            <marker date="1502523172559" expanded="true" signature="107:666" ph="{...}" />
             <marker date="1502523172559" expanded="true" signature="151:664" ph="{...}" />
             <marker date="1502523172559" expanded="true" signature="225:365" ph="{...}" />
             <marker date="1502523172559" expanded="true" signature="388:488" ph="{...}" />
@@ -654,7 +620,6 @@
         <state relative-caret-position="90">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <marker date="1502525828290" expanded="true" signature="61:180" ph="{...}" />
             <marker date="1502525828290" expanded="true" signature="125:178" ph="{...}" />
           </folding>
         </state>
@@ -665,7 +630,6 @@
         <state relative-caret-position="60">
           <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding>
-            <marker date="1502525422363" expanded="true" signature="61:136" ph="{...}" />
             <marker date="1502525422363" expanded="true" signature="122:134" ph="{...}" />
           </folding>
         </state>
@@ -677,7 +641,329 @@
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <marker date="1518716887847" expanded="false" signature="6:164" ph="..." />
-            <marker date="1518716887847" expanded="true" signature="203:2250" ph="{...}" />
+            <marker date="1518716887847" expanded="true" signature="232:2248" ph="{...}" />
+            <marker date="1518716887847" expanded="true" signature="300:935" ph="{...}" />
+            <marker date="1518716887847" expanded="true" signature="436:839" ph="{...}" />
+            <marker date="1518716887847" expanded="true" signature="1009:1195" ph="{...}" />
+            <marker date="1518716887847" expanded="true" signature="1205:1631" ph="///     Регистрируя для Singleton-сервиса зависимость от Transient-сервисы, мы тем самым продлеваем жизнь ... " />
+            <marker date="1518716887847" expanded="true" signature="1679:2242" ph="{...}" />
+            <marker date="1518716887847" expanded="true" signature="1755:1883" ph="/* регистрируем сервис с Lifestyle = Singleton ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <marker date="1503149448974" expanded="true" signature="121:174" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <marker date="1503149638614" expanded="true" signature="6:54" ph="..." />
+            <marker date="1503149638614" expanded="true" signature="145:755" ph="{...}" />
+            <marker date="1503149638614" expanded="true" signature="219:359" ph="{...}" />
+            <marker date="1503149638614" expanded="true" signature="382:482" ph="{...}" />
+            <marker date="1503149638614" expanded="true" signature="553:652" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <marker date="1518717610132" expanded="true" signature="6:54" ph="..." />
+            <marker date="1518717610132" expanded="true" signature="145:658" ph="{...}" />
+            <marker date="1518717610132" expanded="true" signature="219:359" ph="{...}" />
+            <marker date="1518717610132" expanded="true" signature="382:482" ph="{...}" />
+            <marker date="1518717610132" expanded="true" signature="553:652" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component3.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDependsOnScoped/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDependsOnTransient/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding>
+            <marker date="1502535272679" expanded="false" signature="6:164" ph="..." />
+            <marker date="1502535272679" expanded="true" signature="203:2285" ph="{...}" />
+            <marker date="1502535272679" expanded="true" signature="232:2283" ph="{...}" />
+            <marker date="1502535272679" expanded="true" signature="247:610" ph="///     Утечка памяти. ... " />
+            <marker date="1502535272679" expanded="true" signature="658:1080" ph="{...}" />
+            <marker date="1502535272679" expanded="true" signature="1143:1267" ph="{...}" />
+            <marker date="1502535272679" expanded="true" signature="1335:2017" ph="{...}" />
+            <marker date="1502535272679" expanded="true" signature="1470:1922" ph="{...}" />
+            <marker date="1502535272679" expanded="true" signature="1804:1908" ph="/* container.Release(service1); ... */" />
+            <marker date="1502535272679" expanded="true" signature="2091:2277" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientDiposableHolding/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1502522874283" expanded="false" signature="6:160" ph="..." />
+            <marker date="1502522874283" expanded="true" signature="197:2606" ph="{...}" />
+            <marker date="1502522874283" expanded="true" signature="226:2604" ph="{...}" />
+            <marker date="1502522874283" expanded="true" signature="329:959" ph="{...}" />
+            <marker date="1502522874283" expanded="true" signature="464:864" ph="{...}" />
+            <marker date="1502522874283" expanded="true" signature="1053:1180" ph="{...}" />
+            <marker date="1502522874283" expanded="true" signature="1254:1440" ph="{...}" />
+            <marker date="1502522874283" expanded="true" signature="1450:2075" ph="///     Утечка памяти при отсутствии вызова Release для Transient-компонента, поддерживающего паттерн IDisposable ... " />
+            <marker date="1502522874283" expanded="true" signature="2123:2598" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientHolding/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientHolding/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <marker date="1518854578880" expanded="false" signature="6:74" ph="..." />
+            <marker date="1518854578880" expanded="true" signature="98:3203" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="105:756" ph="classes, interfaces" />
+            <marker date="1518854578880" expanded="true" signature="161:182" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="226:238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="301:313" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="376:388" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="449:461" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="544:556" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="659:671" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="728:740" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="785:3201" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="838:882" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="892:1051" ph="///     При резолве generic-компонента отдается предпочтение закрытому типу вне зависимости от порядка регистраци ... " />
+            <marker date="1518854578880" expanded="true" signature="1089:2238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="1632:1962" ph="/* так нельзя, нужно использовать Forward, иначе будет ошибка: Component GenericCases.DeptDomainService could not ... */" />
+            <marker date="1518854578880" expanded="true" signature="2248:2496" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
+            <marker date="1518854578880" expanded="true" signature="2534:3195" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientHolding/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <marker date="1518854578880" expanded="false" signature="6:74" ph="..." />
+            <marker date="1518854578880" expanded="true" signature="98:3203" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="105:756" ph="classes, interfaces" />
+            <marker date="1518854578880" expanded="true" signature="161:182" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="226:238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="301:313" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="376:388" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="449:461" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="544:556" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="659:671" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="728:740" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="785:3201" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="838:882" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="892:1051" ph="///     При резолве generic-компонента отдается предпочтение закрытому типу вне зависимости от порядка регистраци ... " />
+            <marker date="1518854578880" expanded="true" signature="1089:2238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="1632:1962" ph="/* так нельзя, нужно использовать Forward, иначе будет ошибка: Component GenericCases.DeptDomainService could not ... */" />
+            <marker date="1518854578880" expanded="true" signature="2248:2496" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
+            <marker date="1518854578880" expanded="true" signature="2534:3195" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TransientHolding/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+          <folding>
+            <marker date="1518716034286" expanded="false" signature="6:194" ph="..." />
+            <marker date="1518716034286" expanded="true" signature="259:2811" ph="{...}" />
+            <marker date="1518716034286" expanded="true" signature="274:943" ph="///     Регистрируя для Singleton-сервиса зависимость от Scoped-сервиса, мы тем самым продлеваем жизнь ... " />
+            <marker date="1518716034286" expanded="true" signature="991:1709" ph="{...}" />
+            <marker date="1518716034286" expanded="true" signature="1067:1195" ph="/* регистрируем сервис с Lifestyle = Singleton ... */" />
+            <marker date="1518716034286" expanded="true" signature="1772:2545" ph="{...}" />
+            <marker date="1518716034286" expanded="true" signature="1955:2447" ph="{...}" />
+            <marker date="1518716034286" expanded="true" signature="2619:2805" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Services/IService1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+          <folding>
+            <marker date="1502527869131" expanded="true" signature="119:172" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1502527851930" expanded="false" signature="6:54" ph="..." />
+            <marker date="1502527851930" expanded="true" signature="145:658" ph="{...}" />
+            <marker date="1502527851930" expanded="true" signature="219:359" ph="{...}" />
+            <marker date="1502527851930" expanded="true" signature="382:482" ph="{...}" />
+            <marker date="1502527851930" expanded="true" signature="553:652" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1502525964935" expanded="false" signature="6:54" ph="..." />
+            <marker date="1502525964935" expanded="true" signature="145:707" ph="{...}" />
+            <marker date="1502525964935" expanded="true" signature="219:359" ph="{...}" />
+            <marker date="1502525964935" expanded="true" signature="382:482" ph="{...}" />
+            <marker date="1502525964935" expanded="true" signature="553:652" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IHasGuidId.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1502523172604" expanded="true" signature="97:138" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding>
+            <marker date="1518716525506" expanded="true" signature="6:57" ph="..." />
+            <marker date="1518716525506" expanded="true" signature="164:726" ph="{...}" />
+            <marker date="1518716525506" expanded="true" signature="238:378" ph="{...}" />
+            <marker date="1518716525506" expanded="true" signature="401:501" ph="{...}" />
+            <marker date="1518716525506" expanded="true" signature="572:671" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+          <folding>
+            <marker date="1502523172559" expanded="false" signature="6:57" ph="..." />
+            <marker date="1502523172559" expanded="true" signature="151:664" ph="{...}" />
+            <marker date="1502523172559" expanded="true" signature="225:365" ph="{...}" />
+            <marker date="1502523172559" expanded="true" signature="388:488" ph="{...}" />
+            <marker date="1502523172559" expanded="true" signature="559:658" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <marker date="1502525828290" expanded="true" signature="125:178" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService2.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <marker date="1502525422363" expanded="true" signature="122:134" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <marker date="1518716887847" expanded="false" signature="6:164" ph="..." />
             <marker date="1518716887847" expanded="true" signature="232:2248" ph="{...}" />
             <marker date="1518716887847" expanded="true" signature="300:935" ph="{...}" />
             <marker date="1518716887847" expanded="true" signature="436:839" ph="{...}" />
@@ -695,7 +981,6 @@
           <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding>
             <marker date="1503149638614" expanded="true" signature="6:54" ph="..." />
-            <marker date="1503149638614" expanded="true" signature="101:757" ph="{...}" />
             <marker date="1503149638614" expanded="true" signature="145:755" ph="{...}" />
             <marker date="1503149638614" expanded="true" signature="219:359" ph="{...}" />
             <marker date="1503149638614" expanded="true" signature="382:482" ph="{...}" />
@@ -708,10 +993,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <marker date="1503149601716" expanded="true" signature="58:133" ph="{...}" />
-            <marker date="1503149601716" expanded="true" signature="119:131" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -719,10 +1001,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <marker date="1503149448964" expanded="true" signature="58:135" ph="{...}" />
-            <marker date="1503149448964" expanded="true" signature="121:133" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -731,7 +1010,6 @@
         <state relative-caret-position="90">
           <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
           <folding>
-            <marker date="1503149448974" expanded="true" signature="58:176" ph="{...}" />
             <marker date="1503149448974" expanded="true" signature="121:174" ph="{...}" />
           </folding>
         </state>
@@ -741,14 +1019,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1503149626789" expanded="false" signature="6:54" ph="..." />
-            <marker date="1503149626789" expanded="true" signature="101:660" ph="{...}" />
-            <marker date="1503149626789" expanded="true" signature="145:658" ph="{...}" />
-            <marker date="1503149626789" expanded="true" signature="219:359" ph="{...}" />
-            <marker date="1503149626789" expanded="true" signature="382:482" ph="{...}" />
-            <marker date="1503149626789" expanded="true" signature="553:652" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +1029,6 @@
           <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
           <folding>
             <marker date="1518717610132" expanded="true" signature="6:54" ph="..." />
-            <marker date="1518717610132" expanded="true" signature="101:660" ph="{...}" />
             <marker date="1518717610132" expanded="true" signature="145:658" ph="{...}" />
             <marker date="1518717610132" expanded="true" signature="219:359" ph="{...}" />
             <marker date="1518717610132" expanded="true" signature="382:482" ph="{...}" />
@@ -771,15 +1041,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518717668526" expanded="false" signature="6:194" ph="..." />
-            <marker date="1518717668526" expanded="true" signature="230:2462" ph="{...}" />
-            <marker date="1518717668526" expanded="true" signature="259:2460" ph="{...}" />
-            <marker date="1518717668526" expanded="true" signature="274:788" ph="///     Если Транзиентный компонент реализует IDisposable (или имеет зависимость от IDisposable компонента), ... " />
-            <marker date="1518717668526" expanded="true" signature="836:1581" ph="{...}" />
-            <marker date="1518717668526" expanded="true" signature="1644:2194" ph="{...}" />
-            <marker date="1518717668526" expanded="true" signature="1827:2096" ph="{...}" />
-            <marker date="1518717668526" expanded="true" signature="2268:2454" ph="{...}" />
+            <marker date="1506749115180" expanded="false" signature="6:101" ph="..." />
+            <marker date="1506749115180" expanded="true" signature="103:290" ph="/* General Information about an assembly is controlled through the following ... */" />
+            <marker date="1506749115180" expanded="true" signature="641:851" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
+            <marker date="1506749115180" expanded="true" signature="1026:1353" ph="/* Version information for an assembly consists of the following four values: ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <marker date="1518854578880" expanded="false" signature="6:74" ph="..." />
+            <marker date="1518854578880" expanded="true" signature="98:3203" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="105:756" ph="classes, interfaces" />
+            <marker date="1518854578880" expanded="true" signature="161:182" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="226:238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="301:313" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="376:388" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="449:461" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="544:556" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="659:671" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="728:740" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="785:3201" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="838:882" ph="{...}" />
+            <marker date="1518854578880" expanded="false" signature="892:1051" ph="///     При резолве generic-компонента отдается предпочтение закрытому типу вне зависимости от порядка регистраци ... " />
+            <marker date="1518854578880" expanded="true" signature="1089:2238" ph="{...}" />
+            <marker date="1518854578880" expanded="true" signature="1632:1962" ph="/* так нельзя, нужно использовать Forward, иначе будет ошибка: Component GenericCases.DeptDomainService could not ... */" />
+            <marker date="1518854578880" expanded="true" signature="2248:2496" ph="///     При обычной регистрации с закрытыми типами предпочтение отдается дефолтному компоненту ... " />
+            <marker date="1518854578880" expanded="true" signature="2534:3195" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCF17135-A1C4-47A8-A355-E7A73BE89297/ba/b6952d9d/ComponentRegistration`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="1019" column="28" lean-forward="false" selection-start-line="1019" selection-start-column="28" selection-end-line="1019" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Registrations/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <marker date="1518876394051" expanded="false" signature="6:136" ph="..." />
+            <marker date="1518876394051" expanded="true" signature="161:5802" ph="{...}" />
+            <marker date="1518876394051" expanded="false" signature="168:769" ph="interfaces, classes" />
+            <marker date="1518876394051" expanded="true" signature="231:243" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="279:291" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="346:358" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="414:426" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="453:521" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="549:631" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="658:670" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="697:709" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="741:753" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="797:5800" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="850:894" ph="{...}" />
+            <marker date="1518876394051" expanded="false" signature="989:1313" ph="{...}" />
+            <marker date="1518876394051" expanded="false" signature="1440:1916" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="1656:1808" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="1840:1906" ph="{...}" />
+            <marker date="1518876394051" expanded="false" signature="2047:2563" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="2364:2434" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="2487:2553" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="2573:2760" ph="///     Регистрация по нескольким интерфейсам, резолв скоупт-компонентов возвращает один и тот же объект по разны ... " />
+            <marker date="1518876394051" expanded="false" signature="2799:3460" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="3470:3671" ph="///     IsDefault определяет, какой экземпляр какого типа будет создаваться при Resolve, по умолчанию первая ... " />
+            <marker date="1518876394051" expanded="false" signature="3710:4145" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="4155:4353" ph="///     IsFallback делает регистрацию сервисов резервной, т.е. эта регистрация сработает, если нет иных регистрац ... " />
+            <marker date="1518876394051" expanded="false" signature="4392:4968" ph="{...}" />
+            <marker date="1518876394051" expanded="true" signature="4978:5165" ph="///     Регистрация по нескольким интерфейсам, резолв скоупт-компонентов возвращает один и тот же объект по разны ... " />
+            <marker date="1518876394051" expanded="false" signature="5204:5794" ph="{...}" />
           </folding>
         </state>
       </provider>
