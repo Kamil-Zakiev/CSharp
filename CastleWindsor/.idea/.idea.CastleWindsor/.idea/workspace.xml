@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e056433e-3d0d-442a-ad74-c8d399e85b01" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/SingletonFromManyThreads/Program.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/SingletonFromManyThreads/Properties/AssemblyInfo.cs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/SingletonFromManyThreads/SingletonFromManyThreads.csproj" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/SingletonFromManyThreads/packages.config" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CastleWindsor/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.CastleWindsor/.idea/contentModel.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CastleWindsor/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.CastleWindsor/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CastleWindsor.sln" afterPath="$PROJECT_DIR$/CastleWindsor.sln" />
@@ -16,33 +20,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NonObviousRegistrations/Program.cs">
+        <entry file="file://$PROJECT_DIR$/SingletonFromManyThreads/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-520">
-              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
-                <marker date="1518971853930" expanded="true" signature="6:185" ph="..." />
-                <marker date="1518971853930" expanded="true" signature="280:3335" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="308:376" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="404:854" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="435:489" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="510:575" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="610:684" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="711:777" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="881:893" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="920:932" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="960:1057" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="994:1051" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="1085:1097" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="1131:1198" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="1226:3333" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="1279:1323" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="1412:1679" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="1791:2251" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="2364:2658" ph="{...}" />
-                <marker date="1518971853930" expanded="true" signature="2668:2854" ph="///     При наличии нескольких конструкторов, резолв использует конструктор с наибольшим(!) числом разрешимых(!) ... " />
-                <marker date="1518971853930" expanded="true" signature="2893:3327" ph="{...}" />
+                <marker date="1519056500754" expanded="false" signature="6:183" ph="..." />
+                <marker date="1519056500754" expanded="true" signature="219:1509" ph="{...}" />
+                <marker date="1519056500754" expanded="true" signature="247:286" ph="{...}" />
+                <marker date="1519056500754" expanded="true" signature="314:378" ph="{...}" />
+                <marker date="1519056500754" expanded="true" signature="406:1507" ph="{...}" />
+                <marker date="1519056500754" expanded="true" signature="582:687" ph="{...}" />
+                <marker date="1519056500754" expanded="true" signature="836:1501" ph="{...}" />
+                <marker date="1519056500754" expanded="true" signature="1141:1231" ph="{...}" />
+                <marker date="1519056500754" expanded="true" signature="1415:1491" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManualResetEventSlim.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE073096-ED89-4F7E-B8BF-05628286ED96/71/41b4709a/ManualResetEventSlim.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1575">
+              <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE073096-ED89-4F7E-B8BF-05628286ED96/19/93e97d86/Task.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42420">
+              <caret line="2828" column="32" lean-forward="false" selection-start-line="2828" selection-start-column="32" selection-end-line="2828" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,31 +74,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCF17135-A1C4-47A8-A355-E7A73BE89297/ba/b6952d9d/ComponentRegistration`1.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TransientDiposableHolding/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IHasGuidId.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnTransient/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component3.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/NonObviousRegistrations/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Services/IService3.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IHasGuidId.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TransientHolding/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Registrations/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDiposableHolding/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SingletonFromManyThreads/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientHolding/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE073096-ED89-4F7E-B8BF-05628286ED96/71/41b4709a/ManualResetEventSlim.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE073096-ED89-4F7E-B8BF-05628286ED96/19/93e97d86/Task.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/363257E3-9D24-4888-B16F-C2A2FFEC12DF/95/dde80774/Task.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/NonObviousRegistrations/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -99,6 +114,7 @@
         <option value="$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs" />
         <option value="$PROJECT_DIR$/Registrations/Program.cs" />
         <option value="$PROJECT_DIR$/NonObviousRegistrations/Program.cs" />
+        <option value="$PROJECT_DIR$/SingletonFromManyThreads/Program.cs" />
       </list>
     </option>
   </component>
@@ -109,10 +125,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1496" />
-    <option name="y" value="-324" />
-    <option name="width" value="980" />
-    <option name="height" value="674" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -136,33 +152,18 @@
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (9 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (10 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (9 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Registration examples" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (10 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ResolveExamples" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (9 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Registration examples" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="NonObviousRegistrations" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (9 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Registration examples" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="NonObviousRegistrations" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (9 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Registration examples" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="NonObviousRegistrations" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assemblies" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (10 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ResolveExamples" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="SingletonFromManyThreads" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -191,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Registration examples\NonObviousRegistrations">
+  <component name="RunManager" selected=".NET Project.ResolveExamples\SingletonFromManyThreads">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -221,21 +222,6 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
-    </configuration>
-    <configuration name="LifestyleCases\SingletonDependsOnTransient" type="DotNetProject" factoryName=".NET Project" temporary="true">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/SingletonDependsOnTransient/bin/Debug/SingletonDependsOnTransient.exe" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SingletonDependsOnTransient/bin/Debug" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <envs />
-      <option name="USE_MONO" value="0" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/SingletonDependsOnTransient/SingletonDependsOnTransient.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.0" />
     </configuration>
     <configuration name="LifestyleCases\TransientDependsOnScoped" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/TransientDependsOnScoped/bin/Debug/SingletonDependsOnScoped.exe" />
@@ -281,6 +267,21 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+    </configuration>
+    <configuration name="ResolveExamples\SingletonFromManyThreads" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/SingletonFromManyThreads/bin/Debug/SingletonFromManyThreads.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SingletonFromManyThreads/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/SingletonFromManyThreads/SingletonFromManyThreads.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5.2" />
     </configuration>
     <configuration default="true" type="DotNetProject" factoryName=".NET Project">
       <option name="PROJECT_PATH" value="" />
@@ -344,18 +345,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
       <item index="1" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
-      <item index="2" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnTransient" />
-      <item index="3" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\TransientDependsOnScoped" />
-      <item index="4" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
-      <item index="5" class="java.lang.String" itemvalue=".NET Project.Registration examples\NonObviousRegistrations" />
+      <item index="2" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\TransientDependsOnScoped" />
+      <item index="3" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
+      <item index="4" class="java.lang.String" itemvalue=".NET Project.Registration examples\NonObviousRegistrations" />
+      <item index="5" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\SingletonFromManyThreads" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue=".NET Project.Registration examples\NonObviousRegistrations" />
-        <item index="1" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
-        <item index="2" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
-        <item index="3" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\TransientDependsOnScoped" />
-        <item index="4" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\SingletonDependsOnTransient" />
+        <item index="0" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\SingletonFromManyThreads" />
+        <item index="1" class="java.lang.String" itemvalue=".NET Project.Registration examples\NonObviousRegistrations" />
+        <item index="2" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
+        <item index="3" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
+        <item index="4" class="java.lang.String" itemvalue=".NET Project.LifestyleCases\TransientDependsOnScoped" />
       </list>
     </recent_temporary>
   </component>
@@ -376,11 +377,13 @@
       <workItem from="1518637987300" duration="64000" />
       <workItem from="1518715387483" duration="2583000" />
       <workItem from="1518943870970" duration="7820000" />
+      <workItem from="1519055114799" duration="1313000" />
+      <workItem from="1519056456362" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21375000" />
+    <option name="totallyTimeSpent" value="22733000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,30 +395,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-315" width="1936" height="1096" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3728261" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5864583" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2595949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -427,39 +431,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TransientHolding/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -768,77 +744,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCF17135-A1C4-47A8-A355-E7A73BE89297/ba/b6952d9d/ComponentRegistration`1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="1019" column="28" lean-forward="false" selection-start-line="1019" selection-start-column="28" selection-end-line="1019" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCF17135-A1C4-47A8-A355-E7A73BE89297/ba/b6952d9d/ComponentRegistration`1.cs" />
     <entry file="file://$PROJECT_DIR$/Registrations/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="48" column="5" lean-forward="false" selection-start-line="26" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <marker date="1518876394051" expanded="false" signature="6:136" ph="..." />
-            <marker date="1518876394051" expanded="true" signature="161:5802" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="168:769" ph="interfaces, classes" />
-            <marker date="1518876394051" expanded="true" signature="231:243" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="279:291" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="346:358" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="414:426" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="453:521" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="549:631" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="658:670" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="697:709" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="741:753" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="797:5800" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="850:894" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="989:1313" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="1440:1916" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="1656:1808" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="1840:1906" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="2047:2563" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="2364:2434" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="2487:2553" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="2573:2760" ph="///     Регистрация по нескольким интерфейсам, резолв скоупт-компонентов возвращает один и тот же объект по разны ... " />
-            <marker date="1518876394051" expanded="true" signature="2799:3460" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="3470:3671" ph="///     IsDefault определяет, какой экземпляр какого типа будет создаваться при Resolve, по умолчанию первая ... " />
-            <marker date="1518876394051" expanded="true" signature="3710:4145" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="4155:4353" ph="///     IsFallback делает регистрацию сервисов резервной, т.е. эта регистрация сработает, если нет иных регистрац ... " />
-            <marker date="1518876394051" expanded="true" signature="4392:4968" ph="{...}" />
-            <marker date="1518876394051" expanded="true" signature="4978:5165" ph="///     Регистрация по нескольким интерфейсам, резолв скоупт-компонентов возвращает один и тот же объект по разны ... " />
-            <marker date="1518876394051" expanded="true" signature="5204:5794" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NonObviousRegistrations/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="120">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE073096-ED89-4F7E-B8BF-05628286ED96/19/93e97d86/Task.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42420">
+          <caret line="2828" column="32" lean-forward="false" selection-start-line="2828" selection-start-column="32" selection-end-line="2828" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CE073096-ED89-4F7E-B8BF-05628286ED96/71/41b4709a/ManualResetEventSlim.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="105" column="40" lean-forward="false" selection-start-line="105" selection-start-column="40" selection-end-line="105" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/363257E3-9D24-4888-B16F-C2A2FFEC12DF/95/dde80774/Task.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="2540" column="8" lean-forward="false" selection-start-line="2540" selection-start-column="8" selection-end-line="2540" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingletonFromManyThreads/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
-            <marker date="1518971853930" expanded="true" signature="6:185" ph="..." />
-            <marker date="1518971853930" expanded="true" signature="280:3335" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="308:376" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="404:854" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="435:489" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="510:575" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="610:684" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="711:777" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="881:893" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="920:932" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="960:1057" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="994:1051" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="1085:1097" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="1131:1198" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="1226:3333" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="1279:1323" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="1412:1679" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="1791:2251" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="2364:2658" ph="{...}" />
-            <marker date="1518971853930" expanded="true" signature="2668:2854" ph="///     При наличии нескольких конструкторов, резолв использует конструктор с наибольшим(!) числом разрешимых(!) ... " />
-            <marker date="1518971853930" expanded="true" signature="2893:3327" ph="{...}" />
+            <marker date="1519056500754" expanded="false" signature="6:183" ph="..." />
+            <marker date="1519056500754" expanded="true" signature="219:1509" ph="{...}" />
+            <marker date="1519056500754" expanded="true" signature="247:286" ph="{...}" />
+            <marker date="1519056500754" expanded="true" signature="314:378" ph="{...}" />
+            <marker date="1519056500754" expanded="true" signature="406:1507" ph="{...}" />
+            <marker date="1519056500754" expanded="true" signature="582:687" ph="{...}" />
+            <marker date="1519056500754" expanded="true" signature="836:1501" ph="{...}" />
+            <marker date="1519056500754" expanded="true" signature="1141:1231" ph="{...}" />
+            <marker date="1519056500754" expanded="true" signature="1415:1491" ph="{...}" />
           </folding>
         </state>
       </provider>

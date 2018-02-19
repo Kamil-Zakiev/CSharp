@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registrations", "Registrati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonObviousRegistrations", "NonObviousRegistrations\NonObviousRegistrations.csproj", "{2F92D4F9-90C1-4BC3-AC13-71CD2B77378A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResolveExamples", "ResolveExamples", "{1C4DA871-6083-4716-A281-09CDABBE472B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonFromManyThreads", "SingletonFromManyThreads\SingletonFromManyThreads.csproj", "{7CE50EE2-613A-41F7-807A-33E00021302D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{2F92D4F9-90C1-4BC3-AC13-71CD2B77378A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F92D4F9-90C1-4BC3-AC13-71CD2B77378A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F92D4F9-90C1-4BC3-AC13-71CD2B77378A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE50EE2-613A-41F7-807A-33E00021302D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE50EE2-613A-41F7-807A-33E00021302D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE50EE2-613A-41F7-807A-33E00021302D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE50EE2-613A-41F7-807A-33E00021302D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,5 +89,6 @@ Global
 		{3AA67CCC-E805-41BD-A4CC-6FAAAF1B2E44} = {05437D71-F9A6-4A2C-8E50-DE2CE8328032}
 		{56574249-92FA-45E4-88C5-B49E10E83F26} = {05437D71-F9A6-4A2C-8E50-DE2CE8328032}
 		{2F92D4F9-90C1-4BC3-AC13-71CD2B77378A} = {05437D71-F9A6-4A2C-8E50-DE2CE8328032}
+		{7CE50EE2-613A-41F7-807A-33E00021302D} = {1C4DA871-6083-4716-A281-09CDABBE472B}
 	EndGlobalSection
 EndGlobal
