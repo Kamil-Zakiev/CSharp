@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonFromManyThreads", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScopedFromManyThreads", "ScopedFromManyThreads\ScopedFromManyThreads.csproj", "{E31F3BF6-5AF5-414B-BCD5-A56DC7A0BE4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerWebByThreadsWebApp", "PerWebByThreadsWebApp\PerWebByThreadsWebApp.csproj", "{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{E31F3BF6-5AF5-414B-BCD5-A56DC7A0BE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E31F3BF6-5AF5-414B-BCD5-A56DC7A0BE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E31F3BF6-5AF5-414B-BCD5-A56DC7A0BE4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,5 +103,6 @@ Global
 		{2F92D4F9-90C1-4BC3-AC13-71CD2B77378A} = {05437D71-F9A6-4A2C-8E50-DE2CE8328032}
 		{7CE50EE2-613A-41F7-807A-33E00021302D} = {1C4DA871-6083-4716-A281-09CDABBE472B}
 		{E31F3BF6-5AF5-414B-BCD5-A56DC7A0BE4F} = {1C4DA871-6083-4716-A281-09CDABBE472B}
+		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F} = {1C4DA871-6083-4716-A281-09CDABBE472B}
 	EndGlobalSection
 EndGlobal

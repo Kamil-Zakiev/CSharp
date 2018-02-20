@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e056433e-3d0d-442a-ad74-c8d399e85b01" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/PerWebByThreadsWebApp/WindsorControllerFactory.cs" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CastleWindsor/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.CastleWindsor/.idea/contentModel.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CastleWindsor/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.CastleWindsor/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/CastleWindsor.sln" afterPath="$PROJECT_DIR$/CastleWindsor.sln" />
@@ -15,24 +16,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ScopedFromManyThreads/Program.cs">
+      <file leaf-file-name="Global.asax.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Global.asax.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
               <folding>
-                <marker date="1519151029174" expanded="true" signature="6:183" ph="..." />
-                <marker date="1519151029174" expanded="true" signature="216:2595" ph="{...}" />
-                <marker date="1519151029174" expanded="true" signature="244:283" ph="{...}" />
-                <marker date="1519151029174" expanded="true" signature="311:375" ph="{...}" />
-                <marker date="1519151029174" expanded="true" signature="403:2593" ph="{...}" />
-                <marker date="1519151029174" expanded="true" signature="579:684" ph="{...}" />
-                <marker date="1519151029174" expanded="true" signature="732:776" ph="{...}" />
-                <marker date="1519151029174" expanded="true" signature="786:977" ph="///     При открытии скоупа после создания потоков падает ошибка, т.к. данные через контекст потока не передались ... " />
-                <marker date="1519151029174" expanded="true" signature="1016:1692" ph="{...}" />
-                <marker date="1519151029174" expanded="true" signature="1702:1872" ph="///     Данные о скоупе передаются в дочерние потоки через контекст потока ... " />
-                <marker date="1519151029174" expanded="true" signature="1911:2587" ph="{...}" />
+                <marker date="1519155456887" expanded="true" signature="6:149" ph="..." />
+                <marker date="1519155456887" expanded="true" signature="182:957" ph="{...}" />
+                <marker date="1519155456887" expanded="true" signature="226:955" ph="{...}" />
+                <marker date="1519155456887" expanded="true" signature="275:949" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WindsorControllerFactory.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/WindsorControllerFactory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding>
+                <marker date="1519155193083" expanded="false" signature="6:87" ph="..." />
+                <marker date="1519155193083" expanded="true" signature="120:831" ph="{...}" />
+                <marker date="1519155193083" expanded="true" signature="191:829" ph="{...}" />
+                <marker date="1519155193083" expanded="true" signature="304:354" ph="{...}" />
+                <marker date="1519155193083" expanded="true" signature="434:504" ph="{...}" />
+                <marker date="1519155193083" expanded="true" signature="618:823" ph="{...}" />
+                <marker date="1519155193083" expanded="true" signature="668:747" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultControllerFactory.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/62/2ee3788d/DefaultControllerFactory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="307" column="113" lean-forward="false" selection-start-line="307" selection-start-column="113" selection-end-line="307" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IControllerActivator.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/69/a693e0a1/IControllerActivator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Controllers/HomeController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <marker date="1519153723152" expanded="true" signature="6:155" ph="..." />
+                <marker date="1519153723152" expanded="true" signature="200:744" ph="{...}" />
+                <marker date="1519153723152" expanded="true" signature="247:742" ph="{...}" />
+                <marker date="1519153723152" expanded="true" signature="355:444" ph="{...}" />
+                <marker date="1519153723152" expanded="true" signature="481:597" ph="{...}" />
+                <marker date="1519153723152" expanded="true" signature="636:736" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Web.config" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Web.config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,11 +111,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/WindsorControllerFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/69/a693e0a1/IControllerActivator.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDiposableHolding/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnTransient/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonFromManyThreads/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/62/2ee3788d/DefaultControllerFactory.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientDependsOnScoped/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/NonObviousRegistrations/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -68,6 +130,8 @@
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IHasGuidId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Web.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TransientHolding/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Registrations/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ScopedFromManyThreads/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,6 +140,7 @@
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Global.asax.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Services/IService1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GenericRegistrationSpecification/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -92,6 +157,9 @@
         <option value="$PROJECT_DIR$/NonObviousRegistrations/Program.cs" />
         <option value="$PROJECT_DIR$/SingletonFromManyThreads/Program.cs" />
         <option value="$PROJECT_DIR$/ScopedFromManyThreads/Program.cs" />
+        <option value="$PROJECT_DIR$/PerWebByThreadsWebApp/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/PerWebByThreadsWebApp/WindsorControllerFactory.cs" />
+        <option value="$PROJECT_DIR$/PerWebByThreadsWebApp/Global.asax.cs" />
       </list>
     </option>
   </component>
@@ -102,12 +170,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1910" />
-    <option name="y" value="-320" />
-    <option name="width" value="1936" />
+    <option name="x" value="-352" />
+    <option name="y" value="-10" />
+    <option name="width" value="2721" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <flattenPackages />
@@ -129,33 +199,25 @@
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (11 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (12 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (11 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (12 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="ResolveExamples" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (11 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (12 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="ResolveExamples" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="ScopedFromManyThreads" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="PerWebByThreadsWebApp" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (11 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="CastleWindsor (12 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="ResolveExamples" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="ScopedFromManyThreads" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="CastleWindsor (11 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="ResolveExamples" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="ScopedFromManyThreads" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="References" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assemblies" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="PerWebByThreadsWebApp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Global.asax" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -171,6 +233,7 @@
     <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
     <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
     <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -184,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.ResolveExamples\ScopedFromManyThreads">
+  <component name="RunManager" selected=".NET Project.ResolveExamples\PerWebByThreadsWebApp">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -199,21 +262,6 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="None" />
       <option name="PROJECT_TFM" value="" />
-    </configuration>
-    <configuration name="GenericRegistrationSpecification" type="DotNetProject" factoryName=".NET Project" temporary="true">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/GenericRegistrationSpecification/bin/Debug/GenericRegistrationSpecification.exe" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GenericRegistrationSpecification/bin/Debug" />
-      <option name="PASS_PARENT_ENVS" value="1" />
-      <envs />
-      <option name="USE_MONO" value="0" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/GenericRegistrationSpecification/GenericRegistrationSpecification.csproj" />
-      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
-      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
-      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="Console" />
-      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
     </configuration>
     <configuration name="Registration examples\NonObviousRegistrations" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/NonObviousRegistrations/bin/Debug/NonObviousRegistrations.exe" />
@@ -244,6 +292,24 @@
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="Console" />
       <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+    </configuration>
+    <configuration name="ResolveExamples\PerWebByThreadsWebApp" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="C:/Program Files/IIS Express/iisexpress.exe" />
+      <option name="PROGRAM_PARAMETERS" value="/config:$PROJECT_DIR$/.idea/config/applicationhost.config /site:PerWebByThreadsWebApp /apppool:Clr4IntegratedAppPool" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PerWebByThreadsWebApp" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/PerWebByThreadsWebApp/PerWebByThreadsWebApp.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Web" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method>
+        <option name="LaunchBrowser.Before.Run" url="http://localhost:5000/" />
+      </method>
     </configuration>
     <configuration name="ResolveExamples\ScopedFromManyThreads" type="DotNetProject" factoryName=".NET Project" temporary="true">
       <option name="EXE_PATH" value="$PROJECT_DIR$/ScopedFromManyThreads/bin/Debug/ScopedFromManyThreads.exe" />
@@ -336,19 +402,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
-      <item index="1" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
-      <item index="2" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
-      <item index="3" class="java.lang.String" itemvalue=".NET Project.Registration examples\NonObviousRegistrations" />
-      <item index="4" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\SingletonFromManyThreads" />
-      <item index="5" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\ScopedFromManyThreads" />
+      <item index="1" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
+      <item index="2" class="java.lang.String" itemvalue=".NET Project.Registration examples\NonObviousRegistrations" />
+      <item index="3" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\SingletonFromManyThreads" />
+      <item index="4" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\ScopedFromManyThreads" />
+      <item index="5" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\PerWebByThreadsWebApp" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\ScopedFromManyThreads" />
-        <item index="1" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\SingletonFromManyThreads" />
-        <item index="2" class="java.lang.String" itemvalue=".NET Project.Registration examples\NonObviousRegistrations" />
-        <item index="3" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
-        <item index="4" class="java.lang.String" itemvalue=".NET Project.GenericRegistrationSpecification" />
+        <item index="0" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\PerWebByThreadsWebApp" />
+        <item index="1" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\ScopedFromManyThreads" />
+        <item index="2" class="java.lang.String" itemvalue=".NET Project.ResolveExamples\SingletonFromManyThreads" />
+        <item index="3" class="java.lang.String" itemvalue=".NET Project.Registration examples\NonObviousRegistrations" />
+        <item index="4" class="java.lang.String" itemvalue=".NET Project.Registration examples\Registrations" />
       </list>
     </recent_temporary>
   </component>
@@ -371,12 +437,12 @@
       <workItem from="1518943870970" duration="7820000" />
       <workItem from="1519055114799" duration="1313000" />
       <workItem from="1519056456362" duration="45000" />
-      <workItem from="1519149492552" duration="1876000" />
+      <workItem from="1519149492552" duration="4090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24609000" />
+    <option name="totallyTimeSpent" value="26823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,18 +454,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-315" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23541667" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37171054" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18550107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -429,48 +495,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Services/IService1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="41" lean-forward="false" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SingletonDependsOnScoped/Components/Component1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IHasGuidId.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component1.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="54" lean-forward="false" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Components/Component2.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SingletonDependsOnTransient/Services/IService1.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -766,10 +790,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ScopedFromManyThreads/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <marker date="1519151029174" expanded="true" signature="6:183" ph="..." />
             <marker date="1519151029174" expanded="true" signature="216:2595" ph="{...}" />
@@ -782,6 +814,66 @@
             <marker date="1519151029174" expanded="true" signature="1016:1692" ph="{...}" />
             <marker date="1519151029174" expanded="true" signature="1702:1872" ph="///     Данные о скоупе передаются в дочерние потоки через контекст потока ... " />
             <marker date="1519151029174" expanded="true" signature="1911:2587" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <marker date="1519153723152" expanded="true" signature="6:155" ph="..." />
+            <marker date="1519153723152" expanded="true" signature="200:744" ph="{...}" />
+            <marker date="1519153723152" expanded="true" signature="247:742" ph="{...}" />
+            <marker date="1519153723152" expanded="true" signature="355:444" ph="{...}" />
+            <marker date="1519153723152" expanded="true" signature="481:597" ph="{...}" />
+            <marker date="1519153723152" expanded="true" signature="636:736" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/62/2ee3788d/DefaultControllerFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="307" column="113" lean-forward="false" selection-start-line="307" selection-start-column="113" selection-end-line="307" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CC73190B-AB9D-435C-8315-10FF295C572A/69/a693e0a1/IControllerActivator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/WindsorControllerFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <marker date="1519155193083" expanded="false" signature="6:87" ph="..." />
+            <marker date="1519155193083" expanded="true" signature="120:831" ph="{...}" />
+            <marker date="1519155193083" expanded="true" signature="191:829" ph="{...}" />
+            <marker date="1519155193083" expanded="true" signature="304:354" ph="{...}" />
+            <marker date="1519155193083" expanded="true" signature="434:504" ph="{...}" />
+            <marker date="1519155193083" expanded="true" signature="618:823" ph="{...}" />
+            <marker date="1519155193083" expanded="true" signature="668:747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PerWebByThreadsWebApp/Global.asax.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <marker date="1519155456887" expanded="true" signature="6:149" ph="..." />
+            <marker date="1519155456887" expanded="true" signature="182:957" ph="{...}" />
+            <marker date="1519155456887" expanded="true" signature="226:955" ph="{...}" />
+            <marker date="1519155456887" expanded="true" signature="275:949" ph="{...}" />
           </folding>
         </state>
       </provider>
