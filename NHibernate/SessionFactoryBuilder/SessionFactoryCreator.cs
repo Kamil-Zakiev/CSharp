@@ -34,12 +34,12 @@ namespace SessionFactoryBuilder
             cfg.DataBaseIntegration(d =>
             {
                 // диалект контролирует синтаксис sql-запросов
-                d.Dialect<NHibernate.Dialect.MsSql2012Dialect>();
+                d.Dialect<NHibernate.Dialect.PostgreSQLDialect>();
 
                 // драйвер отвечает за отправку и прием данных
-                d.Driver<NHibernate.Driver.SqlClientDriver>();
+                d.Driver<NHibernate.Driver.NpgsqlDriver>();
 
-                d.ConnectionString = "Server=.;Initial Catalog=Library;Integrated Security=true";
+                d.ConnectionString = "Server=localhost;Port=5432;Database=library;User ID=postgres;Password=123";
                 d.LogSqlInConsole = true;
                 
             });
@@ -57,7 +57,7 @@ namespace SessionFactoryBuilder
 
             // создаем объект ISessionFactory, хранящий в себе настройки, в единственном экземпляре
             // этот объект не содержит подключения к БД
-            ISessionFactory sessionFactory = cfg.BuildSessionFactory();
+            var sessionFactory = cfg.BuildSessionFactory();
 
             _sessionFactory = sessionFactory;
             return _sessionFactory;

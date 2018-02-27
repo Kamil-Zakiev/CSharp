@@ -8,7 +8,7 @@ namespace CrudOnPoco
 {
     internal class Program
     {
-        private static ISessionFactory _sessionFactory = SessionFactoryBuilder.SessionFactoryCreator.GetOrCreateSessionFactory();
+        private static ISessionFactory _sessionFactory;
         
         /// <summary> Пример создания объекта и сохранения его в БД </summary>
         private static void CreateExample()
@@ -71,8 +71,9 @@ namespace CrudOnPoco
 
         private static void Main(string[] args)
         {
-            log4net.Config.XmlConfigurator.Configure();
-            UpdateExample();
+            _sessionFactory = SessionFactoryBuilder.SessionFactoryCreator.GetOrCreateSessionFactory();
+            //log4net.Config.XmlConfigurator.Configure();
+            CreateExample();
             return;
             ISession session = _sessionFactory.OpenSession();
             ITransaction transaction = session.BeginTransaction();

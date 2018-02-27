@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetLoadAndLazyFetch", "GetL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cache", "Cache\Cache.csproj", "{1D1A80FC-DDE7-4841-833E-60E8653657C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntitesAndMappings", "EntitesAndMappings", "{96E54BC4-4C66-496A-B095-DE4C111EA3D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SessionFactory", "SessionFactory", "{9D9E6596-F0AB-42D2-94E8-7DBC05671C03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CRUD", "CRUD", "{28F20D9B-C087-4A58-9267-E47B86395B6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +54,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A192C5A4-1757-4F34-B26E-6B60DA85F958} = {96E54BC4-4C66-496A-B095-DE4C111EA3D5}
+		{98F11D04-EA19-4A1C-A0BB-0A72E8EF9047} = {9D9E6596-F0AB-42D2-94E8-7DBC05671C03}
+		{41494087-47F2-4CA0-A31B-BAE7474E0FEF} = {28F20D9B-C087-4A58-9267-E47B86395B6E}
 	EndGlobalSection
 EndGlobal
