@@ -8,33 +8,66 @@ namespace CrudOnPoco
 {
     internal class Program
     {
-        private static ISessionFactory _sessionFactory;
-        
         /// <summary> Пример создания объекта и сохранения его в БД </summary>
-        private static void CreateExample()
+        /// <param name="sessionFactory"></param>
+        private static void CreateExample(ISessionFactory sessionFactory)
         {
-            ISession session = _sessionFactory.OpenSession();
+            var session = sessionFactory.OpenSession();
             var book = new Book { Title = "Book ", Year = 2010 };
 
             var res2 = session.Save(book);
-            // SQL: select nextval('book_id_seq'); => 123
+            // SQL: select nextval('book_id_seq'); => 1
             Console.WriteLine(res2);
 
-            // без "session.Flush();" ничего в БД не сохранится
             session.Flush();
             // insert into book(id, title, year) values (123, 'Book 1', 2014);
 
             session.Close();
         }
+        
+        /// <summary> Пример создания нескольких объектов и их сохранения в БД </summary>
+        /// <param name="sessionFactory"></param>
+        private static void MultipleCreateExample(ISessionFactory sessionFactory)
+        {
+            var session = sessionFactory.OpenSession();
+            // todo: configeru postgres batcher
+            // session.SetBatchSize(20);
+            var books = Enumerable.Range(1, 10)
+                .Select(number => new Book()
+                {
+                    Title = "Book #" + number,
+                    Year = 2010 + number / 20
+                })
+                .ToArray();
+
+            foreach (var book in books)
+            {
+                var res = session.Save(book);
+                // NHibernate: select nextval ('book_id_seq')
+                
+                Console.Write(res);
+                Console.Write(", ");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("Before session flush");
+            session.Flush();
+            Console.WriteLine("After session flush");
+            // 
+
+            session.Close();
+        }
 
         /// <summary> Пример обновления объекта и сохранения его в БД </summary>
-        private static void UpdateExample()
+        private static void UpdateExample(ISessionFactory sessionFactory)
         {
-            ISession session = _sessionFactory.OpenSession();
+            var session = sessionFactory.OpenSession();
             var bookQuery = session.Query<Book>();
             var earliestBooks = bookQuery
                 .Where(b => b.Year == bookQuery.Select(x => x.Year).Min())
                 .ToList();
+            // NHibernate: select book0_.id as id1_0_, book0_.title as title2_0_, book0_.year as year3_0_
+            // from book book0_ where book0_.year=(select min(book1_.year) from book book1_)
 
             foreach (var earliestBook in earliestBooks)
             {
@@ -42,16 +75,15 @@ namespace CrudOnPoco
                 session.Update(earliestBook);
             }
 
-            // без "session.Flush();" ничего в БД не сохранится
             session.Flush();
-            // SQL: Batch commands...
+            // SQL: many update commands
 
             session.Close();
         }
 
-        private static void DeleteExample()
+        private static void DeleteExample(ISessionFactory sessionFactory)
         {
-            ISession session = _sessionFactory.OpenSession();
+            var session = sessionFactory.OpenSession();
             var bookQuery = session.Query<Book>();
             var newestBooks = bookQuery
                 .Where(b => b.Year == bookQuery.Max(x => x.Year))
@@ -62,32 +94,16 @@ namespace CrudOnPoco
                 session.Delete(newiestBook);
             }
 
-            // без "session.Flush();" ничего в БД не сохранится
             session.Flush();
-            // SQL: Batch commands...
+            // many delete commands
 
             session.Close();
         }
 
         private static void Main(string[] args)
         {
-            _sessionFactory = SessionFactoryBuilder.SessionFactoryCreator.GetOrCreateSessionFactory();
-            //log4net.Config.XmlConfigurator.Configure();
-            CreateExample();
-            return;
-            ISession session = _sessionFactory.OpenSession();
-            ITransaction transaction = session.BeginTransaction();
-
-
-
-            var res3 = session.Query<Book>().Where(x => x.Year == 2014).Count();
-            // SQL: insert into book(id, title, year) values (123, 'Book 1', 2014);
-            // SQL: select count(*) from book where year = 2014;
-            // => 1
-
-
-            transaction.Commit();
-            session.Close();
+            var sessionFactory = SessionFactoryBuilder.SessionFactoryCreator.GetOrCreateSessionFactory();
+            DeleteExample(sessionFactory);
         }
     }
 }

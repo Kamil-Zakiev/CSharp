@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using EntitiesAndMaps.Books;
+using NHibernate;
 using NHibernate.Linq;
 using SessionFactoryBuilder;
 
@@ -197,6 +198,23 @@ namespace Transactions
 
             session.Close();
         }
+        
+        /// <summary> Пример отката транзакции при dispose транзакции </summary>
+        private static void Example8(ISessionFactory sessionFactory)
+        {
+            var session = sessionFactory.OpenSession();
+            sessionFactory.OpenSession();
+            using (var tr = session.BeginTransaction())
+            {
+                var book = session.Get<Book>(406L);
+                book.Title = "#3 Testing implicit";
+                
+                // фиксация изменений в БД не произойдет, будет rollback
+            }
+
+            session.Close();
+        }
+
 
         private static void Main(string[] args)
         {

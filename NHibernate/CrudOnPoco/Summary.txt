@@ -1,0 +1,2 @@
+Simple CRUD operations via session without using a transaction. 
+This actually leads to incorrect cases that are shown in Transactions -> TransactionIsRequired project.

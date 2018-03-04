@@ -1,0 +1,9 @@
+************************************ Without transaction **************************************************************
+If we open session and do not open a transaction then DML statements are applied when session.Flush() is called.
+In that case if we don't call flash explicitly database state won't change.
+
+************************************ With transaction *****************************************************************
+When we use transactions we are expected to use transaction.Commit() to apply our statements to database. If we don't
+commit transaction our changes would be rolled back. 
+When we use a transaction and call session.Flush() or query all entities including modified, DML statements are sended 
+to database side, but they will be applied within a transaction (and won't affect on current DB state).
