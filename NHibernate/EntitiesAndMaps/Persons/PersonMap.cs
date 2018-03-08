@@ -22,8 +22,8 @@ namespace EntitiesAndMaps.Persons
                 m.Cascade(Cascade.All);
 
                 // типа не будет доп запроса на получение свойств, потому что все данные подгрузятся сразу
-                // m.Fetch(FetchKind.Join);
-                m.Fetch(FetchKind.Select);
+               //m.Fetch(FetchKind.Join);
+                  m.Fetch(FetchKind.Select);
                // m.Lazy(LazyRelation.NoProxy);
             });
         }

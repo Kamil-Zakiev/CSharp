@@ -3,6 +3,7 @@ using System.Linq;
 using EntitiesAndMaps.Books;
 using EntitiesAndMaps.Persons;
 using NHibernate.Linq;
+using NHibernate.Util;
 using SessionFactoryBuilder;
 
 namespace GetLoadAndLazyFetch
@@ -23,12 +24,12 @@ namespace GetLoadAndLazyFetch
             };
             session.Save(person);
             session.Flush();
-            
+
             session.Close();
         }
 
         /// <summary>
-        /// Если ссылка замаплена со стратегией Fetch = Select, то при каждом обращении по ссылке будет отправляться SQL-запрос
+        ///     Если ссылка замаплена со стратегией Fetch = Select, то при каждом обращении по ссылке будет отправляться SQL-запрос
         /// </summary>
         private static void Example1()
         {
@@ -47,7 +48,7 @@ namespace GetLoadAndLazyFetch
         }
 
         /// <summary>
-        /// Если ссылка замаплена со стратегией Fetch = Join, то все данные об объекте-ссылке подтянутся в одном SQL-запросе
+        ///     Если ссылка замаплена со стратегией Fetch = Join, то все данные об объекте-ссылке подтянутся в одном SQL-запросе
         /// </summary>
         private static void Example2()
         {
@@ -65,9 +66,9 @@ namespace GetLoadAndLazyFetch
         }
 
         /// <summary>
-        /// Load откладывает подгрузку объекта до того момента, пока не потребуются его свойства
-        /// Если объекта по ID нет, то выкидывается ошибка
-        /// Логика стратегии Fetch работает
+        ///     Load откладывает подгрузку объекта до того момента, пока не потребуются его свойства
+        ///     Если объекта по ID нет, то выкидывается ошибка
+        ///     Логика стратегии Fetch работает
         /// </summary>
         private static void Example3()
         {
@@ -82,27 +83,27 @@ namespace GetLoadAndLazyFetch
             // SQL: SELECT person0_.id as id1_1_0_, person0_.name as name2_1_0_, person0_.fav_book_id as fav3_1_0_ FROM person person0_ WHERE person0_.id = 91
             Console.WriteLine("Любимая книга: {0}", person.FavouriteBook.Title);
             // SQL: SELECT book0_.id as id1_0_0_, book0_.title as title2_0_0_, book0_.year as year3_0_0_ FROM book book0_ WHERE book0_.id = 1
-            
+
             session.Close();
         }
-        
+
         /// <summary>
-        /// С помощью Fetch обеспечивается подгрузка объектов, тем самым избавляемся от проблемы n+1 запросов
+        ///     С помощью Fetch обеспечивается подгрузка объектов, тем самым избавляемся от проблемы n+1 запросов
         /// </summary>
         private static void Example4()
         {
             var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
 
             var session = sessionFactory.OpenSession();
-            
+
             // var persons = session.Query<Person>().ToList();
             var persons = session.Query<Person>().Fetch(x => x.FavouriteBook).ToList();
-            
+
             session.Close();
         }
-        
+
         /// <summary>
-        /// Не стоит обращаться к объектам после закрытия сессии
+        ///     Не стоит обращаться к объектам после закрытия сессии
         /// </summary>
         private static void Example5()
         {
@@ -120,22 +121,55 @@ namespace GetLoadAndLazyFetch
 
 
         /// <summary>
-        /// GetAll всегда откладывает подгрузку зависимых объектов вне зависимости от способа маппинга
+        ///     GetAll всегда откладывает подгрузку зависимых объектов вне зависимости от способа маппинга
         /// </summary>
         private static void Example6()
         {
             var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
 
             var session = sessionFactory.OpenSession();
-            
+
             var persons = session.Query<Person>().ToList();
 
             session.Close();
         }
 
+        /// <summary> Проблема запросов n+1 </summary>
+        private static void Example7()
+        {
+            var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
+            var session = sessionFactory.OpenSession();
+
+            var anyPerson = session.Query<Person>().Any();
+            if (!anyPerson)
+            {
+                var books = session.Query<Book>().Take(100).ToArray();
+                books.Select((book, i) => new Person
+                    {
+                        FavouriteBook = book,
+                        Name = "Person #" + i
+                    })
+                    .ToArray()
+                    .ForEach(person => session.Save(person));
+
+                session.Flush();
+                session.Clear();
+            }
+
+            var persons = session.Query<Person>().ToArray();
+            var k = 0;
+            foreach (var person in persons)
+                // из-за обращения к полю другой сущности, которая не подгружена, будут идти запросы к БД
+                if (person.FavouriteBook.Title == string.Empty)
+                    k++;
+
+            Console.WriteLine(k);
+            session.Close();
+        }
+
         private static void Main(string[] args)
         {
-            Example6();
+            Example7();
         }
     }
 }
