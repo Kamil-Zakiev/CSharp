@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Best practices", "Best prac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeExamples", "SomeExamples\SomeExamples.csproj", "{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionIsRequired", "Transactions\TransactionIsRequired\TransactionIsRequired.csproj", "{DC54D550-9D76-4841-8C83-93A06D7392A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC54D550-9D76-4841-8C83-93A06D7392A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC54D550-9D76-4841-8C83-93A06D7392A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC54D550-9D76-4841-8C83-93A06D7392A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC54D550-9D76-4841-8C83-93A06D7392A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +98,6 @@ Global
 		{BD5A2B27-F7F5-4DFF-AFCD-F6F6E291A11C} = {28F20D9B-C087-4A58-9267-E47B86395B6E}
 		{561D3E0A-2042-464C-86AA-2A17DAD5482C} = {71CB0726-F62A-44C8-9177-AF7CB469ACDE}
 		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0} = {6091B8BC-8909-45A9-8229-D3165DE3349B}
+		{DC54D550-9D76-4841-8C83-93A06D7392A8} = {A5723841-3214-469E-9BDF-02EE28ACF948}
 	EndGlobalSection
 EndGlobal

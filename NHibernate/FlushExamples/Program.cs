@@ -71,7 +71,7 @@ namespace FlushExamples
 
             // перед запросом отправляются изменения в БД в рамках открытой транзакции, но не фиксируются
             var allBooks = session.Query<Person>().ToArray();
-            
+
             // а здесь отправки запроса не будет
             // var allPersons = session.Query<Person>().Count();
 
@@ -91,11 +91,61 @@ namespace FlushExamples
 
             // отправка запроса на обновление
             session.Flush();
-            
+
             // фиксация изменений в БД не произойдет, будет откат транзакции
             session.Close();
         }
-        
+
+        /// <summary>
+        ///     FlushMode.Commit:
+        ///     Перед запросом всех сущностей не происходит учитывание новых объектов, т.к. нет запроса insert перед query all
+        /// </summary>
+        public static void Example1()
+        {
+            var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
+            var session1 = sessionFactory.OpenSession();
+            session1.FlushMode = FlushMode.Commit;
+
+            var newBook = new Book
+            {
+                Title = "Brand new book",
+                Year = 2018
+            };
+            session1.Save(newBook);
+
+            var tx1 = session1.BeginTransaction();
+            Console.WriteLine("Transaction was opened.");
+            var isNewBookConsidered = session1.Query<Book>().Any(book => book.Id == newBook.Id);
+            Console.WriteLine("Was new book considered?");
+            Console.WriteLine(isNewBookConsidered ? "yes" : "no");
+
+            tx1.Commit();
+            session1.Close();
+        }
+
+        /// <summary>
+        ///     statelessSession - отправка запроса сразу в БД при вызове команд
+        ///     Перед запросом всех сущностей происходит учитывание новых объектов, т.к. есть запрос insert перед query all
+        /// </summary>
+        public static void Example2()
+        {
+            var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
+            var statelessSession = sessionFactory.OpenStatelessSession();
+
+            var newBook = new Book
+            {
+                Title = "Brand new book",
+                Year = 2018
+            };
+            statelessSession.Insert(newBook);
+
+            var isNewBookConsidered = statelessSession.Query<Book>().Any(book => book.Id == newBook.Id);
+            Console.WriteLine("Was new book considered?");
+            Console.WriteLine(isNewBookConsidered ? "yes" : "no");
+
+            statelessSession.Close();
+        }
+
         public static void Main(string[] args)
         {
             var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
