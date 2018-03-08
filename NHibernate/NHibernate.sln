@@ -35,6 +35,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CRUD through batcher ", "CR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlushExamples", "FlushExamples\FlushExamples.csproj", "{561D3E0A-2042-464C-86AA-2A17DAD5482C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Best practices", "Best practices", "{6091B8BC-8909-45A9-8229-D3165DE3349B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeExamples", "SomeExamples\SomeExamples.csproj", "{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{561D3E0A-2042-464C-86AA-2A17DAD5482C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{561D3E0A-2042-464C-86AA-2A17DAD5482C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{561D3E0A-2042-464C-86AA-2A17DAD5482C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,5 +91,6 @@ Global
 		{41494087-47F2-4CA0-A31B-BAE7474E0FEF} = {BE1AD16E-A33D-4891-ACF8-DC5C1D05CEE2}
 		{BD5A2B27-F7F5-4DFF-AFCD-F6F6E291A11C} = {28F20D9B-C087-4A58-9267-E47B86395B6E}
 		{561D3E0A-2042-464C-86AA-2A17DAD5482C} = {71CB0726-F62A-44C8-9177-AF7CB469ACDE}
+		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0} = {6091B8BC-8909-45A9-8229-D3165DE3349B}
 	EndGlobalSection
 EndGlobal

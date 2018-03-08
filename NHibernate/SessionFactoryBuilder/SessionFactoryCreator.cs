@@ -62,6 +62,5 @@ namespace SessionFactoryBuilder
             _sessionFactory = sessionFactory;
             return _sessionFactory;
         }
-
     }
 }
