@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Linq;
 using EntitiesAndMaps.Persons;
 using NHibernate.Linq;
@@ -18,7 +19,8 @@ namespace Cache
             var persons = session.Query<Person>().ToList();
             // SQL:  select person0_.id as id1_1_, person0_.name as name2_1_, person0_.fav_book_id as fav3_1_ from person person0_
 
-            var person = session.Get<Person>(91l);
+            var firstPersonId = persons.First().Id;
+            var person = session.Get<Person>(firstPersonId);
             // No SQL, got from cache
             // SQL after tooltip: SELECT book0_.id as id1_0_0_, book0_.title as title2_0_0_, book0_.year as year3_0_0_ FROM book book0_ WHERE book0_.id=1;
             session.Close();
@@ -34,10 +36,15 @@ namespace Cache
             // SQL:  select person0_.id as id1_1_, person0_.name as name2_1_, person0_.fav_book_id as fav3_1_ from person person0_
 
             var firstPerson = persons.First();
+            Console.WriteLine(firstPerson.Name);
             session.Evict(firstPerson);
+            firstPerson.Name = "First person";
+            // session.Update(firstPerson); - без явного флаша обновление не произойдет
+            session.Flush();
 
             var person = session.Get<Person>(firstPerson.Id);
-            // SQL:  SELECT person0_.id as id1_1_0_, person0_.name as name2_1_0_, person0_.fav_book_id as fav3_1_0_ FROM person person0_ WHERE person0_.id=91
+            // SQL:  SELECT person0_.id as id1_1_0_, person0_.name as name2_1_0_, person0_.fav_book_id as fav3_1_0_ FROM person person0_ WHERE person0_.id=441
+            Console.WriteLine(person.Name);
 
             session.Close();
         }
@@ -63,83 +70,92 @@ namespace Cache
             var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
             var session = sessionFactory.OpenSession();
 
-            var persons = session.Query<Person>().Select(x => new
-            {
-                asd = "asd",
-                person = x
-            }).ToList();
+            var persons = session.Query<Person>()
+                .Select(x => new
+                {
+                    asd = "asd",
+                    person = x
+                })
+                .ToList();
             // SQL: select person0_.id as id1_1_, person0_.name as name2_1_, person0_.fav_book_id as fav3_1_ from person person0_
 
-             var person = persons.First().person;
+            var person = persons.First().person;
             person.Name = "Человек, у sdfgdsfg Id = " + person.Id;
-           
+
             session.Flush();
-            // изменения зафиксировались в БД
+            // UPDATE person SET name = :p0, fav_book_id = :p1 WHERE id = :p2;
 
             session.Close();
         }
 
         /// <summary>
-        /// Похоже на то, что NH синхронизирует кешированные сущности между разными сессиями
-        /// Это слишком сложная задача, видимо кеш находится на уровне фабрики
+        /// 
         /// </summary>
         private static void Example5()
         {
+            // todo: не работает
             var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
-            var session = sessionFactory.OpenSession();
+            var session1 = sessionFactory.OpenSession();
 
-            var persons = session.Query<Person>().ToList();
+            var tx1 = session1.BeginTransaction();
+
+            var persons = session1.Query<Person>().ToList();
 
             foreach (var person in persons)
             {
-                person.Name += "_LALAL";
+                person.Name = "_1";
             }
-
 
             var session2 = sessionFactory.OpenSession();
-            var persons2 = session.Query<Person>().ToList();
+
+            var tx2 = session2.BeginTransaction();
+            var persons2 = session2.Query<Person>().ToList();
             foreach (var person in persons2)
             {
-                person.Name += "DirtyName";
+                person.Name += "_2";
             }
-            session2.Flush();
+            
+            tx2.Commit();
             session2.Close();
 
-            session.Flush();
-            session.Close();
+            tx1.Commit();
+            session1.Close();
         }
 
 
         /// <summary>
-        /// Похоже, что NH синхронизирует кешированные сущности между разными сессиями
-        /// Видимо кеш находится на уровне фабрики
-        /// Если сделать выброс сущности из кеша, то изменения по кешу второго уровня его не достанут!
+        /// 
         /// </summary>
         private static void Example6()
         {
+            // todo: не работает
             var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
-            var session = sessionFactory.OpenSession();
+            var session1 = sessionFactory.OpenSession();
 
-            var person = session.Get<Person>(91l);
+            var tx1 = session1.BeginTransaction();
+
+            var person = session1.Get<Person>(442L);
             // Если сделать выброс сущности из кеша, то изменения по кешу второго уровня его не достанут!
             //session.Evict(person);
 
-            person.Name += "_1";
+            person.Name = "1";
             
             var session2 = sessionFactory.OpenSession();
 
-            var person2 = session.Get<Person>(91l);
+            var tx2 = session2.BeginTransaction();
+            var person2 = session2.Get<Person>(442L);
             person2.Name += "_2";
-            session2.Flush();
+            
+            tx2.Commit();
             session2.Close();
 
-            session.Flush();
-            session.Close();
+            tx1.Commit();
+            session1.Close();
         }
 
         private static void Main(string[] args)
         {
-            Example6();
+            Example5();
         }
     }
 }
