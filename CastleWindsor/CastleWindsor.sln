@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScopedFromManyThreads", "Sc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerWebByThreadsWebApp", "PerWebByThreadsWebApp\PerWebByThreadsWebApp.csproj", "{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingParameters", "PassingParameters\PassingParameters.csproj", "{C5344DBF-74BF-4EE9-B8CE-F75FC1DDAFE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5344DBF-74BF-4EE9-B8CE-F75FC1DDAFE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5344DBF-74BF-4EE9-B8CE-F75FC1DDAFE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5344DBF-74BF-4EE9-B8CE-F75FC1DDAFE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5344DBF-74BF-4EE9-B8CE-F75FC1DDAFE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -104,5 +110,6 @@ Global
 		{7CE50EE2-613A-41F7-807A-33E00021302D} = {1C4DA871-6083-4716-A281-09CDABBE472B}
 		{E31F3BF6-5AF5-414B-BCD5-A56DC7A0BE4F} = {1C4DA871-6083-4716-A281-09CDABBE472B}
 		{FD6EE56E-B589-4D7B-ACE7-B7C33989485F} = {1C4DA871-6083-4716-A281-09CDABBE472B}
+		{C5344DBF-74BF-4EE9-B8CE-F75FC1DDAFE6} = {1C4DA871-6083-4716-A281-09CDABBE472B}
 	EndGlobalSection
 EndGlobal
