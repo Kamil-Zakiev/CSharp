@@ -3,13 +3,10 @@ using System.Linq;
 using System.Reflection;
 using NullGuard;
 
+[assembly: NullGuard(ValidationFlags.All)]
+
 namespace FodyTesting
 {
-    public class Person
-    {
-        public string Name { get; set; }
-    }
-
     internal class Program
     {
         public static void Main(string[] args)
@@ -24,12 +21,20 @@ namespace FodyTesting
             {
                 Console.WriteLine(e);
                 Console.WriteLine();
-            }            
-            
+            }
+
             var nameProp = person.GetType().GetTypeInfo().DeclaredProperties.Single(p => p.Name == "Name");
+
+            var oldValue = nameProp.GetValue(person);
+            Console.WriteLine(oldValue);
             nameProp.SetValue(person, "123");
-            
+
             Console.WriteLine(person.Name);
+        }
+
+        private class Person
+        {
+            public string Name { get; set; }
         }
     }
 }
