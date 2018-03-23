@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{95019D13-C544-4E44-97A8-95CB9499E59C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{42608C48-6D35-4DA2-BBE6-6C005369C485}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95019D13-C544-4E44-97A8-95CB9499E59C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95019D13-C544-4E44-97A8-95CB9499E59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95019D13-C544-4E44-97A8-95CB9499E59C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95019D13-C544-4E44-97A8-95CB9499E59C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42608C48-6D35-4DA2-BBE6-6C005369C485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42608C48-6D35-4DA2-BBE6-6C005369C485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42608C48-6D35-4DA2-BBE6-6C005369C485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42608C48-6D35-4DA2-BBE6-6C005369C485}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
