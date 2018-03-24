@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeExamples", "SomeExample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionIsRequired", "Transactions\TransactionIsRequired\TransactionIsRequired.csproj", "{DC54D550-9D76-4841-8C83-93A06D7392A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomapperQuirk", "AutomapperQuirk\AutomapperQuirk.csproj", "{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{DC54D550-9D76-4841-8C83-93A06D7392A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC54D550-9D76-4841-8C83-93A06D7392A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC54D550-9D76-4841-8C83-93A06D7392A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,5 +105,6 @@ Global
 		{561D3E0A-2042-464C-86AA-2A17DAD5482C} = {71CB0726-F62A-44C8-9177-AF7CB469ACDE}
 		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0} = {6091B8BC-8909-45A9-8229-D3165DE3349B}
 		{DC54D550-9D76-4841-8C83-93A06D7392A8} = {A5723841-3214-469E-9BDF-02EE28ACF948}
+		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC} = {BA31A1CF-D4C6-4850-8AEA-1F78EACC41A4}
 	EndGlobalSection
 EndGlobal

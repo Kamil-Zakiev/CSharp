@@ -70,10 +70,29 @@ namespace FlushExamples
             book.Title = "#3 Testing implicit";
 
             // перед запросом отправляются изменения в БД в рамках открытой транзакции, но не фиксируются
-            var allBooks = session.Query<Person>().ToArray();
+            var allBooks = session.Query<Book>().ToArray();
 
             // а здесь отправки запроса не будет
             // var allPersons = session.Query<Person>().Count();
+
+            // Flush + фиксация в БД (commit)
+            tr.Commit();
+            session.Close();
+        }
+        
+        /// <summary> Пример отправки запроса на обновление объекта, при открытой транзакции </summary>
+        private static void CreateExampleImplicitAction3(ISessionFactory sessionFactory)
+        {
+            var session = sessionFactory.OpenSession();
+
+            var tr = session.BeginTransaction();
+            var book = session.Get<Book>(406L);
+            tr.Commit();
+            book.Title = "#3 Testing implicit";
+            
+            tr = session.BeginTransaction();
+            // перед запросом изменения НЕ отправляются в БД в рамках открытой транзакции
+            var allBooks = session.Query<Book>().ToArray();
 
             // Flush + фиксация в БД (commit)
             tr.Commit();
@@ -149,7 +168,7 @@ namespace FlushExamples
         public static void Main(string[] args)
         {
             var sessionFactory = SessionFactoryCreator.GetOrCreateSessionFactory();
-            CreateExample(sessionFactory);
+            CreateExampleImplicitAction3(sessionFactory);
         }
     }
 }
