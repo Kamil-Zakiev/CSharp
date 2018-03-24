@@ -1,4 +1,5 @@
 Sorting 100000 items:
+0. merge sort:          8ms
 1. parallel quick sort: 1087ms
 2. insert sort:         4213ms
 3. bubble sort:         17860ms
