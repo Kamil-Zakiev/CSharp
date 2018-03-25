@@ -43,6 +43,7 @@
                     return false;
                 }
 
+                prev = item;
             }
 
             return true;
