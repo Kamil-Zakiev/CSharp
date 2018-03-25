@@ -12,13 +12,14 @@ namespace InsertSort
             for (var i = 1; i < a.Length; i++)
             {
                 var j = i;
-                while (j > 0 && a[j] < a[j-1])
+                var item = a[i];
+                while (j > 0 && a[j-1] > item)
                 {
-                    var z = a[j];
                     a[j] = a[j - 1];
-                    a[j - 1] = z;
                     j--;
                 }
+                
+                a[j] = item;
             }
         }
     }
@@ -36,7 +37,7 @@ namespace InsertSort
             sw.Stop();
 
             Console.WriteLine(sw.ElapsedMilliseconds + "ms");
-            // 4213ms for 100000
+            // 3614ms for 100000
 
             Console.WriteLine(array.IsAscSort());
         }
