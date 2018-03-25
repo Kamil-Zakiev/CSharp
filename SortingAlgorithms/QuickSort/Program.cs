@@ -15,7 +15,7 @@
             var stopWatch = new Stopwatch();
             stopWatch.Start();
             
-            QuickSort.Start(array);
+            QuickSort.Start(array, QuickSortMode.Parallel);
             
             stopWatch.Stop();
             Console.WriteLine("Check: " + array.IsAscSort());

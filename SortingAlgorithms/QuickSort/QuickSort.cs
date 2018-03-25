@@ -3,12 +3,19 @@
     using System;
     using System.Threading.Tasks;
 
+    public enum QuickSortMode
+    {
+        Serial,
+        Parallel
+    }
+
     /// <summary>
     /// Quick sorting implementation. O(n^2) in initial desc case 
     /// </summary>
     public static class QuickSort
     {
-        private static void QuickSortInner<T>(T[] array, int start = 0, int end = -1) where T : IComparable<T>
+        private static void QuickSortInner<T>(T[] array, QuickSortMode quickSortMode = QuickSortMode.Serial,
+            int start = 0, int end = -1) where T : IComparable<T>
         {
             if (end == -1)
             {
@@ -84,24 +91,65 @@
 
             if (start < anchor - 1)
             {
-                var task = new Task(() => QuickSortInner(array, start, anchor - 1),
-                    TaskCreationOptions.AttachedToParent);
-                task.Start();
+                if (quickSortMode == QuickSortMode.Serial)
+                {
+                    QuickSortInner(array, quickSortMode, start, anchor - 1);
+                }
+                else
+                {
+                    StartRightTask(array, quickSortMode, start, anchor);
+                }
+
             }
 
             if (anchor + 1 < end)
             {
-                var task = new Task(() => QuickSortInner(array, anchor + 1, end), TaskCreationOptions.AttachedToParent);
-                task.Start();
+                if (quickSortMode == QuickSortMode.Serial)
+                {
+                    QuickSortInner(array, quickSortMode, anchor + 1, end);
+                }
+                else
+                {
+                    StartLeftTask(array, quickSortMode, end, anchor);
+                }
+
             }
         }
 
-        public static void Start<T>(T[] array) where T : IComparable<T>
+        private static void StartRightTask<T>(T[] array, QuickSortMode quickSortMode, int start, int anchor)
+            where T : IComparable<T>
         {
+            var task = new Task(() => QuickSortInner(array, quickSortMode, start, anchor - 1),
+                TaskCreationOptions.AttachedToParent);
+            task.Start();
+        }
+
+        private static void StartLeftTask<T>(T[] array, QuickSortMode quickSortMode, int end, int anchor)
+            where T : IComparable<T>
+        {
+            var task = new Task(() => QuickSortInner(array, quickSortMode, anchor + 1, end),
+                TaskCreationOptions.AttachedToParent);
+            task.Start();
+        }
+
+        public static void Start<T>(T[] array, QuickSortMode quickSortMode = QuickSortMode.Serial)
+            where T : IComparable<T>
+        {
+            if (quickSortMode == QuickSortMode.Serial)
+            {
+                QuickSortInner(array, quickSortMode);
+                return;
+            }
+
             // Task.Run is not appropriate, because it is using TaskCreationOptions.DenyChildAttach
-            var task = new Task(() => QuickSortInner(array));
+            var task = new Task(() => QuickSortInner(array, quickSortMode));
             task.Start();
             task.Wait();
+        }
+
+        public static void StartSerial<T>(T[] array) where T : IComparable<T>
+        {
+            QuickSortInner(array, QuickSortMode.Serial);
         }
     }
 }
