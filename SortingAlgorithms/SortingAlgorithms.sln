@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\Merg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellSort", "ShellSort\ShellSort.csproj", "{ADFA56DF-7B6A-4C0B-9BA8-FA31EB2750F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmark", "Benchmark\Benchmark.csproj", "{4515A1CB-73E3-44AB-997F-FC79773E10CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{ADFA56DF-7B6A-4C0B-9BA8-FA31EB2750F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADFA56DF-7B6A-4C0B-9BA8-FA31EB2750F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADFA56DF-7B6A-4C0B-9BA8-FA31EB2750F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4515A1CB-73E3-44AB-997F-FC79773E10CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4515A1CB-73E3-44AB-997F-FC79773E10CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4515A1CB-73E3-44AB-997F-FC79773E10CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4515A1CB-73E3-44AB-997F-FC79773E10CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4515A1CB-73E3-44AB-997F-FC79773E10CE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Benchmark</RootNamespace>
+    <AssemblyName>Benchmark</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BubbleSort\BubbleSort.csproj">
+      <Project>{2b4c7215-f660-4c24-8866-dbcfa1f4c2b5}</Project>
+      <Name>BubbleSort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{42608c48-6d35-4da2-bbe6-6c005369c485}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InsertSort\InsertSort.csproj">
+      <Project>{78f9294d-c0b7-48bf-a033-b4d7c01e775d}</Project>
+      <Name>InsertSort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MergeSort\MergeSort.csproj">
+      <Project>{5206c4a4-0b1c-4a82-92f1-ca869d6eaecf}</Project>
+      <Name>MergeSort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuickSort\QuickSort.csproj">
+      <Project>{95019d13-c544-4e44-97a8-95cb9499e59c}</Project>
+      <Name>QuickSort</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShellSort\ShellSort.csproj">
+      <Project>{adfa56df-7b6a-4c0b-9ba8-fa31eb2750f3}</Project>
+      <Name>ShellSort</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+</Project>
