@@ -2,19 +2,19 @@
 
 namespace ChainOfResponsibility
 {
-    public class StringMessageHandler:IHandler<string>
+    public class StringMessageHandler : IHandler<string>
     {
-        private int Id => this.GetHashCode();
-        
-        private IHandler<string> _nextHandler;
+        private readonly Func<string, bool> _hasToTrigger;
 
-        private Func<string, bool> _hasToTrigger;
+        private IHandler<string> _nextHandler;
 
         public StringMessageHandler(Func<string, bool> hasToTrigger)
         {
             _hasToTrigger = hasToTrigger;
         }
-        
+
+        private int Id => GetHashCode();
+
         public void SetNextHandler(IHandler<string> nextHandler)
         {
             _nextHandler = nextHandler;
@@ -24,7 +24,7 @@ namespace ChainOfResponsibility
         {
             if (_hasToTrigger(message))
             {
-                Console.WriteLine("Component with Id = "+ Id +" has handled message " + message);
+                Console.WriteLine("Component with Id = " + Id + " has handled message " + message);
                 return;
             }
 

@@ -1,11 +1,11 @@
 ﻿namespace Command
 {
-    interface IStepCommand<TCommandArgument>
+    internal interface IStepCommand<TCommandArgument>
     {
         TCommandArgument Argument { get; }
-        
+
         IStepMaker StepMaker { get; }
-        
+
         void Execute();
     }
 }

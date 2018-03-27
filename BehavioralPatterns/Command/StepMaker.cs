@@ -3,7 +3,7 @@
 namespace Command
 {
     /// <summary> Reciever </summary>
-    class StepMaker: IStepMaker
+    internal class StepMaker : IStepMaker
     {
         public void MakeStep(StepArgument argument)
         {

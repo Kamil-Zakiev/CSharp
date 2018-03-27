@@ -1,7 +1,7 @@
 ﻿namespace Command
 {
     /// <summary> Command </summary>
-    class StepCommand : IStepCommand<StepArgument>
+    internal class StepCommand : IStepCommand<StepArgument>
     {
         public StepCommand(IStepMaker stepMaker, StepArgument argument)
         {

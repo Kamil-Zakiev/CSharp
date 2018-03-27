@@ -1,6 +1,6 @@
 ﻿namespace Command
 {
-    interface IStepMaker
+    internal interface IStepMaker
     {
         void MakeStep(StepArgument argument);
     }

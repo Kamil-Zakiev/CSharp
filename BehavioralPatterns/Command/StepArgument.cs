@@ -1,6 +1,6 @@
 ﻿namespace Command
 {
-    class StepArgument
+    internal class StepArgument
     {
         public EDirection Direction { get; set; }
         public int Distance { get; set; }
