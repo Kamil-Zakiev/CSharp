@@ -22,7 +22,7 @@ namespace InterlockedUsage
             m_ac.AboutToBegin(m_servers.Count);
 
             var keys = m_servers.Keys.ToArray();
-            // httpClient нельзя оборачивать в using! из-за этого вызовется dispose в все текущие запросы автоматически отменятся!
+            // httpClient нельзя оборачивать в using! из-за этого вызовется dispose и все текущие запросы автоматически отменятся!
             var httpClient = new HttpClient();
             foreach (var mServer in keys)
             {

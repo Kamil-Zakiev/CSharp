@@ -6,6 +6,8 @@ namespace SimpleSpinLockExample
     {
         private int m_resourceIsInUse;
 
+        /// <summary>Сколько раз прошлись по циклу впустую
+        /// </summary>
         public int idleCount;
 
         public void Enter()
