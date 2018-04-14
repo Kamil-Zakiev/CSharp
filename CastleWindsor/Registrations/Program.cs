@@ -182,11 +182,13 @@ namespace Registrations
             container.Register(reg1);
             container.Register(reg2);
 
-            var component1 = container.Resolve<I1>();
-            var component2 = container.Resolve<I1>();
+            var scope1 = container.BeginScope();
+            var transientComponent1 = container.Resolve<I1>();
+            var transientComponent2 = container.Resolve<I1>();
+            scope1.Dispose();
 
-            Console.WriteLine(ReferenceEquals(component1, component2));
-            Console.WriteLine(ReferenceEquals(component1.I2, component2.I3));
+            Console.WriteLine(ReferenceEquals(transientComponent1, transientComponent2));
+            Console.WriteLine(ReferenceEquals(transientComponent1.I2, transientComponent2.I3));
         }
     }
 }
