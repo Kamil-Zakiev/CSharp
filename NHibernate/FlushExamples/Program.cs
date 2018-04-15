@@ -137,6 +137,7 @@ namespace FlushExamples
             var isNewBookConsidered = session1.Query<Book>().Any(book => book.Id == newBook.Id);
             Console.WriteLine("Was new book considered?");
             Console.WriteLine(isNewBookConsidered ? "yes" : "no");
+            // no
 
             tx1.Commit();
             session1.Close();

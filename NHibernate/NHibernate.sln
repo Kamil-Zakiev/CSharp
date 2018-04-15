@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionIsRequired", "Tr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomapperQuirk", "AutomapperQuirk\AutomapperQuirk.csproj", "{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadOnlyStrategy", "ReadOnlyStrategy", "{FE8E7C4E-83C1-4A5E-843D-B7C1A2BCCD61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadOnlyStrategy", "ReadOnlyStrategy\ReadOnlyStrategy.csproj", "{D9145F94-26C6-4041-B85E-C0E937542050}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +93,10 @@ Global
 		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9145F94-26C6-4041-B85E-C0E937542050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9145F94-26C6-4041-B85E-C0E937542050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9145F94-26C6-4041-B85E-C0E937542050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9145F94-26C6-4041-B85E-C0E937542050}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,5 +114,6 @@ Global
 		{0DCB812B-AF43-4E3B-A6B7-07F6CCC53EB0} = {6091B8BC-8909-45A9-8229-D3165DE3349B}
 		{DC54D550-9D76-4841-8C83-93A06D7392A8} = {A5723841-3214-469E-9BDF-02EE28ACF948}
 		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC} = {BA31A1CF-D4C6-4850-8AEA-1F78EACC41A4}
+		{D9145F94-26C6-4041-B85E-C0E937542050} = {FE8E7C4E-83C1-4A5E-843D-B7C1A2BCCD61}
 	EndGlobalSection
 EndGlobal

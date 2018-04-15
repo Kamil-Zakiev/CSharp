@@ -8,7 +8,7 @@ namespace MyWebApp
 {
     public static class Logger
     {
-        private const string Path = @"G:\CSharp\MyWebApp\MyWebApp\log.txt";
+        private const string Path = @"E:\Stash\CSharp\MyWebApp\MyWebApp\log.txt";
         
         private static readonly object _lock = new object();
 
