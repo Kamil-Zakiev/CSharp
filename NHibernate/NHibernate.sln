@@ -47,6 +47,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadOnlyStrategy", "ReadOnl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadOnlyStrategy", "ReadOnlyStrategy\ReadOnlyStrategy.csproj", "{D9145F94-26C6-4041-B85E-C0E937542050}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheQuirk", "CacheQuirk\CacheQuirk.csproj", "{206654E2-0122-4346-B787-0D632967703A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{D9145F94-26C6-4041-B85E-C0E937542050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9145F94-26C6-4041-B85E-C0E937542050}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9145F94-26C6-4041-B85E-C0E937542050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206654E2-0122-4346-B787-0D632967703A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206654E2-0122-4346-B787-0D632967703A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206654E2-0122-4346-B787-0D632967703A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206654E2-0122-4346-B787-0D632967703A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,5 +121,6 @@ Global
 		{DC54D550-9D76-4841-8C83-93A06D7392A8} = {A5723841-3214-469E-9BDF-02EE28ACF948}
 		{5F8AA607-30D6-430A-9FCF-1FAA44F496DC} = {BA31A1CF-D4C6-4850-8AEA-1F78EACC41A4}
 		{D9145F94-26C6-4041-B85E-C0E937542050} = {FE8E7C4E-83C1-4A5E-843D-B7C1A2BCCD61}
+		{206654E2-0122-4346-B787-0D632967703A} = {BA31A1CF-D4C6-4850-8AEA-1F78EACC41A4}
 	EndGlobalSection
 EndGlobal
