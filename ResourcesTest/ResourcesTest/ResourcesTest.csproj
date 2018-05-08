@@ -43,7 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content.txt" />
+    <Content Include="Content2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Content3.txt" />
     <EmbeddedResource Include="EmbeddedResource.txt" />
+    <Resource Include="Content4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <AdditionalFiles Include="Content45.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
