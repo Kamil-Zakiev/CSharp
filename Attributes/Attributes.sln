@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataRetrieving", "DataRetri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DebuggerViewTest", "DebuggerViewTest\DebuggerViewTest.csproj", "{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckCtorExecutionTime", "CheckCtorExecutionTime\CheckCtorExecutionTime.csproj", "{B6F9E78C-4B2A-4563-B84D-F0449DE7845B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{062D6E75-2A6D-4A5D-ACC9-3E16C4AFD69D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F9E78C-4B2A-4563-B84D-F0449DE7845B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F9E78C-4B2A-4563-B84D-F0449DE7845B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F9E78C-4B2A-4563-B84D-F0449DE7845B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F9E78C-4B2A-4563-B84D-F0449DE7845B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
