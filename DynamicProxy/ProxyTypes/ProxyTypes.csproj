@@ -41,10 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CountingInterceptor.cs" />
+    <Compile Include="FreezableProxyGenerationHook.cs" />
     <Compile Include="EGender.cs" />
     <Compile Include="Freezable.cs" />
     <Compile Include="FreezableInterceptor.cs" />
     <Compile Include="IFreezable.cs" />
+    <Compile Include="IHasCount.cs" />
     <Compile Include="NotFreezableObjectException.cs" />
     <Compile Include="ObjectFrozenException.cs" />
     <Compile Include="Pet.cs" />

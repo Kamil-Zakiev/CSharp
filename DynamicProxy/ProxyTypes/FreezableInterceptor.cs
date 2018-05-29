@@ -3,10 +3,11 @@ using Tests;
 
 namespace ProxyTypes
 {
-    public class FreezableInterceptor: IInterceptor, IFreezable
+    public class FreezableInterceptor: IInterceptor, IFreezable, IHasCount
     {
         public void Intercept(IInvocation invocation)
         {
+            Count++;
             if (IsFrozen && invocation.Method.IsSpecialName && invocation.Method.Name.StartsWith("set_"))
             {
                 throw new ObjectFrozenException();
@@ -21,5 +22,7 @@ namespace ProxyTypes
         {
             IsFrozen = true;
         }
+
+        public int Count { get; private set; }
     }
 }

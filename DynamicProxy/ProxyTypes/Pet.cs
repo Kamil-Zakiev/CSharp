@@ -4,8 +4,8 @@
     {
         public virtual string Name { get; set; }
 
-        public int Age { get; set; }
+        public virtual int Age { get; set; }
 
-        public EGender Gender { get; set; }
+        public virtual EGender Gender { get; set; }
     }
 }

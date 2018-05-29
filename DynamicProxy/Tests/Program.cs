@@ -1,4 +1,6 @@
-﻿using ProxyTypes;
+﻿using System;
+using Castle.DynamicProxy;
+using ProxyTypes;
 using Xunit;
 
 namespace Tests
@@ -59,6 +61,38 @@ namespace Tests
         {
             var rex = new Pet();
             Assert.Throws<NotFreezableObjectException>(() => Freezable.Freeze(rex));
+        }
+        
+        [Fact]
+        public void DynProxyGetTarget_should_return_proxy_itself()
+        {
+            var pet = Freezable.MakeFreezable<Pet>();
+            var hack = pet as IProxyTargetAccessor;
+            Assert.NotNull(hack);
+            Assert.Same(pet, hack.DynProxyGetTarget());
+        }
+        
+        [Fact]
+        public void Freezable_should_not_hold_any_reference_to_created_objects()
+        {
+            var pet = Freezable.MakeFreezable<Pet>();
+            var petWeakReference = new WeakReference(pet, false);
+            pet = null;
+            GC.Collect();
+            Assert.False(petWeakReference.IsAlive, "Object should have been collected");
+        }
+        
+        [Fact]
+        public void Frozen_object_should_not_intercept_getters()
+        {
+            var pet = Freezable.MakeFreezable<Pet>();
+
+            pet.Age = 123;
+            var age = pet.Age;
+            Freezable.Freeze(pet);
+
+            Assert.Equal(2, Freezable.GetCountOfInterceptorInvocations<CountingInterceptor>(pet));
+            Assert.Equal(1, Freezable.GetCountOfInterceptorInvocations<FreezableInterceptor>(pet));
         }
     }
 }
