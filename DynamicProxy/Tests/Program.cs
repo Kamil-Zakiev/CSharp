@@ -94,5 +94,26 @@ namespace Tests
             Assert.Equal(2, Freezable.GetCountOfInterceptorInvocations<CountingInterceptor>(pet));
             Assert.Equal(1, Freezable.GetCountOfInterceptorInvocations<FreezableInterceptor>(pet));
         }
+        
+        [Fact]
+        public void CountCalls()
+        {
+            var pet = Freezable.MakeFreezable<Pet>();
+
+            pet.Age = 123;
+            pet.Age = 1243;
+            pet.Age = 1223;
+            var age = pet.Age;
+            var age2 = pet.Age;
+            pet = null;
+            
+            var pet2 = Freezable.MakeFreezable<Pet>();
+            
+            pet2.Age = 123;
+            pet2.Age = 1243;
+            pet2.Age = 1223;
+            var age3 = pet2.Age;
+            var age4 = pet2.Age;
+        }
     }
 }

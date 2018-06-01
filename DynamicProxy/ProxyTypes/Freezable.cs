@@ -9,18 +9,31 @@ namespace ProxyTypes
     {
         private static readonly ProxyGenerator Generator;
 
+        private static readonly IInterceptorSelector InterceptorSelector;
+        
+        private static ProxyGenerationOptions ProxyGenerationOptions;
+        private static readonly FreezableProxyGenerationHook FreezableProxyGenerationHook;
+        
+        
+
         static Freezable()
         {
+            InterceptorSelector = new FreezableInterceptorSelector();
             Generator = new ProxyGenerator();
+            
+            FreezableProxyGenerationHook = new FreezableProxyGenerationHook();
         }
 
         public static T MakeFreezable<T>() where T: class
         {
-            var hook = new FreezableProxyGenerationHook();
-            var proxyGenOpthions = new ProxyGenerationOptions(hook); 
+            
+            ProxyGenerationOptions = new ProxyGenerationOptions(FreezableProxyGenerationHook)
+            {
+                Selector = InterceptorSelector
+            }; 
             
             var freezableInterceptor = new FreezableInterceptor();
-            var proxy = Generator.CreateClassProxy<T>(proxyGenOpthions, new CountingInterceptor(), freezableInterceptor);
+            var proxy = Generator.CreateClassProxy<T>(ProxyGenerationOptions, new CountingInterceptor(), freezableInterceptor);
             return proxy;
         }
 

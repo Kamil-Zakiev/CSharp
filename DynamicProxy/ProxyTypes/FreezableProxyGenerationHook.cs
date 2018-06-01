@@ -19,7 +19,8 @@ namespace ProxyTypes
 
         public bool ShouldInterceptMethod(Type type, MethodInfo methodInfo)
         {
-            return methodInfo.Name.StartsWith("set_");
+            return methodInfo.Name.StartsWith("set_") || methodInfo.Name.StartsWith("get_");
+            
         }
     }
 }
