@@ -9,6 +9,9 @@ using NHibernate.Mapping.ByCode;
 
 namespace SessionFactoryBuilder
 {
+    using System.Reflection;
+    using NHibernate.Mapping.ByCode.Conformist;
+
     internal class FlushEventListener : IFlushEventListener
     {
         public void OnFlush(FlushEvent @event)
@@ -51,9 +54,24 @@ namespace SessionFactoryBuilder
 
             // указываем маппинги сущностей
             var modelMapper = new ModelMapper();
-            modelMapper.AddMapping<BookMapping>();
-            modelMapper.AddMapping<PersonMap>();
+
+            Assembly.Load("EntitiesAndMaps");
+            var mapTypes = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(a => a.GetExportedTypes())
+                .Where(type => type.IsClass)
+                .Where(type => type.BaseType != null)
+                .Where(type => type.BaseType.IsGenericType)
+                .Where(type => typeof(ClassMapping<>) == type.BaseType.GetGenericTypeDefinition())
+                .ToArray();
+
+            foreach (var mapType in mapTypes)
+            {
+                modelMapper.AddMapping(mapType);
+            }
+            
             cfg.AddMapping(modelMapper.CompileMappingForAllExplicitlyAddedEntities());
+            
+            modelMapper.CompileMappingForEachExplicitlyAddedEntity().WriteAllXmlMapping();
 
             // создаем объект ISessionFactory, хранящий в себе настройки, в единственном экземпляре
             // этот объект не содержит подключения к БД
