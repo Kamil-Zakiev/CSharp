@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Reflection;
 
 namespace Inheritance
@@ -9,43 +10,71 @@ namespace Inheritance
         public string Text { get; set; }
     }
     
-
     internal class Base
     {
         [My(Text = "Base class property attribute")]
-        public virtual string Name { get; set; }
+        public virtual string Name1 { get; set; }
+
+        [My(Text = "Base class property attribute")]
+        public virtual string Name2 { get; set; }
+
+        [My(Text = "Base class property attribute")]
+        public virtual string Name3 { get; set; }
     }
 
     internal class Derived1 : Base
     {
        [My(Text = "Derived1 class property attribute")]
-       public override string Name { get; set; }
-    }
-    
+       public override string Name1 { get; set; }
 
-    internal class Derived2 : Base
+        [My(Text = "Base class property attribute")]
+        public override string Name2 { get; set; }
+    }
+
+    internal class Derived2 : Derived1
     {
-        public override string Name { get; set; }
+       [My(Text = "Derived2 class property attribute")]
+       public override string Name1 { get; set; }
+
+        public override string Name3 { get; set; }
     }
     
     internal class Program
     {
         public static void Main(string[] args)
         {
-            var namePi = typeof(Derived1).GetProperty("Name");
-            Console.WriteLine(namePi.DeclaringType);
+            GetCustomAttributesTest();
+            GetCustomAttributeTest();
+        }
+
+        private static void GetCustomAttributeTest()
+        {
+            var name1Pi = typeof(Derived2).GetProperty("Name1");
+            // Console.WriteLine((name1Pi.GetCustomAttribute(typeof(MyAttribute)) as MyAttribute).Text); // ambi exc
+            Console.WriteLine((name1Pi.GetCustomAttribute(typeof(MyAttribute), false) as MyAttribute).Text); // Der2
+
+            //Console.WriteLine((name1Pi.GetCustomAttribute(typeof(MyAttribute), true) as MyAttribute).Text); // ambi exc
+
+            var name3Pi = typeof(Derived2).GetProperty("Name3");
+
+            Console.WriteLine((name3Pi.GetCustomAttribute(typeof(MyAttribute)) as MyAttribute).Text); // base
+            // Console.WriteLine((name3Pi.GetCustomAttribute(typeof(MyAttribute), false) as MyAttribute).Text); // null exc
+            Console.WriteLine((name3Pi.GetCustomAttribute(typeof(MyAttribute), true) as MyAttribute).Text); // base
+        }
+
+        private static void GetCustomAttributesTest()
+        {
+            var name1Pi = typeof(Derived2).GetProperty("Name1");
             
-            Console.WriteLine(namePi.GetCustomAttributes(typeof(MyAttribute), false).Length); // 1
-            Console.WriteLine(namePi.GetCustomAttributes(typeof(MyAttribute), true).Length); // 1
+            Console.WriteLine(name1Pi.GetCustomAttributes(typeof(MyAttribute)).Count()); // 3
+            Console.WriteLine((name1Pi.GetCustomAttributes(typeof(MyAttribute), true).Single() as MyAttribute).Text); // Derived2
+            Console.WriteLine((name1Pi.GetCustomAttributes(typeof(MyAttribute), false).Single() as MyAttribute).Text); // Derived2
+
+            var name3Pi = typeof(Derived2).GetProperty("Name3");
             
-            // если искать атрибут с помощью GetCustomAttribute и указать inherit = false, то поиск будет вестить только для свойства текущего класса
-            Console.WriteLine((namePi.GetCustomAttribute(typeof(MyAttribute), false) as MyAttribute).Text);
-            // Derived1 class property attribute
-            
-            // если искать атрибут с помощью GetCustomAttribute и указать inherit = true, то будет вестись поиск в род. классах
-            var namePi2 = typeof(Derived2).GetProperty("Name");
-            Console.WriteLine((namePi2.GetCustomAttribute(typeof(MyAttribute), true) as MyAttribute).Text);
-            // Base class property attribute
+            Console.WriteLine(name3Pi.GetCustomAttributes(typeof(MyAttribute)).Count()); // 1
+            Console.WriteLine(name3Pi.GetCustomAttributes(typeof(MyAttribute), true).Length == 0); // True
+            Console.WriteLine(name3Pi.GetCustomAttributes(typeof(MyAttribute), false).Length == 0); // True
         }
     }
 }
