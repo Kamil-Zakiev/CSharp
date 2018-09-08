@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskContinuasion", "TaskCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChildTasks", "ChildTasks\ChildTasks.csproj", "{930AA230-F2A8-4D32-BD0D-4F41C43AE84A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExecutionContextTest", "ExecutionContextTest\ExecutionContextTest.csproj", "{16293D1D-E35C-4C84-84F2-D334933319C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{930AA230-F2A8-4D32-BD0D-4F41C43AE84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{930AA230-F2A8-4D32-BD0D-4F41C43AE84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{930AA230-F2A8-4D32-BD0D-4F41C43AE84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16293D1D-E35C-4C84-84F2-D334933319C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16293D1D-E35C-4C84-84F2-D334933319C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16293D1D-E35C-4C84-84F2-D334933319C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16293D1D-E35C-4C84-84F2-D334933319C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
