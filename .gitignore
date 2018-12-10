@@ -8,3 +8,4 @@ packages/
 .idea/
 *.txt
 !Summary.txt
+BehavioralPatterns/.vs/Patterns/v15/Server/sqlite3/*
