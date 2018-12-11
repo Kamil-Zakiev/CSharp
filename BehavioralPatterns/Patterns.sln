@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "TemplateM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visitor", "Visitor\Visitor.csproj", "{E2121E46-03A8-429E-A9E7-ADF8662A1D0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{AACF5B34-9075-4685-87D5-7F7F7D373997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{AACF5B34-9075-4685-87D5-7F7F7D373997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{4D8D23B0-0D03-4D4A-9173-AB17F10D7BEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Composite", "Composite\Composite.csproj", "{4D8D23B0-0D03-4D4A-9173-AB17F10D7BEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{326C6D04-4B0E-4BCD-B791-3FB8D222D648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Proxy\Proxy.csproj", "{326C6D04-4B0E-4BCD-B791-3FB8D222D648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{A6852C14-B4A7-4835-8C89-F6961E8D4B29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{326C6D04-4B0E-4BCD-B791-3FB8D222D648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{326C6D04-4B0E-4BCD-B791-3FB8D222D648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{326C6D04-4B0E-4BCD-B791-3FB8D222D648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6852C14-B4A7-4835-8C89-F6961E8D4B29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6852C14-B4A7-4835-8C89-F6961E8D4B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6852C14-B4A7-4835-8C89-F6961E8D4B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6852C14-B4A7-4835-8C89-F6961E8D4B29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
