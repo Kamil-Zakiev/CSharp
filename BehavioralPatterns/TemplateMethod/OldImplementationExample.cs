@@ -15,7 +15,7 @@ namespace TemplateMethod.OldImplementation
             _filePath = filePath;
         }
 
-        protected void InitCache()
+        protected void Init()
         {
             if (_integers == null)
             {
@@ -25,13 +25,13 @@ namespace TemplateMethod.OldImplementation
 
         public int Median()
         {
-            InitCache();
+            Init();
             throw new NotImplementedException();
         }
 
         public double Average()
         {
-            InitCache();
+            Init();
             throw new NotImplementedException();
         }
     }

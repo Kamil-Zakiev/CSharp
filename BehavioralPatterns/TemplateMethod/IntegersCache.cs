@@ -8,17 +8,17 @@ namespace TemplateMethod
     {
         protected IReadOnlyList<int> _integers;
         
-        protected abstract void InitCache();
+        protected abstract void Init();
 
         public int Median()
         {
-            InitCache();
+            Init();
             throw new NotImplementedException();
         }
 
         public double Average()
         {
-            InitCache();
+            Init();
             return _integers.Average();
         }
     }
@@ -32,7 +32,7 @@ namespace TemplateMethod
             _url = url;
         }
 
-        protected override void InitCache()
+        protected override void Init()
         {
             if (_integers == null)
             {
@@ -50,7 +50,7 @@ namespace TemplateMethod
             _filePath = filePath;
         }
 
-        protected override void InitCache()
+        protected override void Init()
         {
             if (_integers == null)
             {
