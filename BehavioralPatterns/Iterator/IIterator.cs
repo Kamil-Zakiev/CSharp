@@ -1,8 +1,8 @@
 ﻿namespace Iterator
 {
-    public interface IIterator
+    public interface IIterator<T>
     {
-        object Current { get; }
+        T Current { get; }
         bool MoveNext();
     }
 }

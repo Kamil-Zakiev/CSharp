@@ -2,19 +2,19 @@
 
 namespace Iterator
 {
-    public class IteratorsFactory
+    public static class IteratorsFactoryExtensions
     {
-        public static IIterator GetWalkingIterator(IHasSightsNearby sightseeing)
+        public static IIterator<IHasSightsNearby> GetWalkingIterator(this IHasSightsNearby sightseeing)
         {
             return new WalkingIterator(sightseeing);
         }
 
-        public static IIterator GetTrainIterator(IHasSightsNearby sightseeing)
+        public static IIterator<IHasSightsNearby> GetTrainIterator(this IHasSightsNearby sightseeing)
         {
             throw new NotImplementedException();
         }
 
-        private class WalkingIterator : IIterator
+        private class WalkingIterator : IIterator<IHasSightsNearby>
         {
             private IHasSightsNearby sightseeing;
 
@@ -23,7 +23,7 @@ namespace Iterator
                 this.sightseeing = sightseeing;
             }
 
-            public object Current => throw new NotImplementedException();
+            public IHasSightsNearby Current => throw new NotImplementedException();
 
             public bool MoveNext()
             {
