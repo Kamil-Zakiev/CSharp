@@ -5,7 +5,7 @@
         int Price { get; }
     }
 
-    public abstract class BaseClass
+    public abstract class ProductFactory
     {
         protected abstract IProduct CreateProduct();
 
@@ -16,9 +16,9 @@
         }
     }
 
-    public class ConcreteProduct : IProduct
+    public class Phone : IProduct
     {
-        public ConcreteProduct(int price)
+        public Phone(int price)
         {
             Price = price;
         }
@@ -26,11 +26,11 @@
         public int Price { get; }
     }
 
-    public class DerivedClass : BaseClass
+    public class PhoneFactory : ProductFactory
     {
         protected override IProduct CreateProduct()
         {
-            return new ConcreteProduct(100);
+            return new Phone(100);
         }
     }
 }
