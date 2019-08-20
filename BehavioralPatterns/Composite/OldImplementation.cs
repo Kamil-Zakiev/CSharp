@@ -37,5 +37,10 @@ namespace Composite.OldImplementation
         {
             return "Order cost is " + CalculateBoxPrice(box);
         }
+
+        public string GetOrderCost(Item item)
+        {
+            return "Order cost is " + item.Price;
+        }
     }
 }

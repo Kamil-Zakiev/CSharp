@@ -6,7 +6,7 @@ namespace Composite
 {
     class Program
     {
-        static void CalculateOrder(IHasPrice smthWithPrice)
+        static void GetOrderCost(IHasPrice smthWithPrice)
         {
             Console.WriteLine($"Order total = {smthWithPrice.Price}");
         }
