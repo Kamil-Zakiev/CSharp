@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Composite
 {
-    class Program
-    {
-        static void GetOrderCost(IHasPrice smthWithPrice)
-        {
-            Console.WriteLine($"Order total = {smthWithPrice.Price}");
-        }
-    }
-
     public interface IHasPrice
     {
         int Price { get; }
@@ -21,22 +12,21 @@ namespace Composite
     {
         private List<IHasPrice> _items = new List<IHasPrice>();
 
-        public void PutItem(IHasPrice item)
-        {
-            _items.Add(item);
-        }
+        public IReadOnlyList<object> Items => _items;
 
         public int Price => _items.Sum(item => item.Price);
     }
 
     public class Item : IHasPrice
     {
-        public int Price { get; }
-
-        public Item(int price)
-        {
-            Price = price;
-        }
+        public int Price => 123;
     }
 
+    public class SomeClass
+    {
+        public string GetOrderCost(IHasPrice smthWithPrice)
+        {
+            return $"Order total = {smthWithPrice.Price}";
+        }
+    }
 }
