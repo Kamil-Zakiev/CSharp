@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AmbientContext.cs" />
     <Compile Include="Anti-patterns\ControlFreak.cs" />
+    <Compile Include="Anti-patterns\ConstrainedConstruction.cs" />
     <Compile Include="ConstructorInjection.cs" />
     <Compile Include="MethodInjection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
