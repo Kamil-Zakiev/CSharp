@@ -46,6 +46,8 @@
     <Compile Include="Anti-patterns\ConstrainedConstruction.cs" />
     <Compile Include="Anti-patterns\ServiceLocator.cs" />
     <Compile Include="ConstructorInjection.cs" />
+    <Compile Include="Examples\MappingRuntimeValues\Solution.cs" />
+    <Compile Include="Examples\MappingRuntimeValues\Problem.cs" />
     <Compile Include="MethodInjection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyInjection.cs" />
