@@ -48,6 +48,7 @@
     <Compile Include="ConstructorInjection.cs" />
     <Compile Include="Examples\MappingRuntimeValues\Solution.cs" />
     <Compile Include="Examples\MappingRuntimeValues\Problem.cs" />
+    <Compile Include="Examples\ShortLivedDependencies\Solution.cs" />
     <Compile Include="Examples\ShortLivedDependencies\Problem.cs" />
     <Compile Include="MethodInjection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
