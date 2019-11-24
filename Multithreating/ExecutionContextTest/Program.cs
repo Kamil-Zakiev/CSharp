@@ -32,7 +32,7 @@ namespace ExecutionContextTest
     {
         public static void Main(string[] args)
         {
-            ThreadsTest();
+            TestTlsForTaskWithAsync().Wait();
         }
 
         private static void TaskTest()
@@ -72,8 +72,8 @@ namespace ExecutionContextTest
             Thread.CurrentPrincipal = myPrincipal;
             System.Runtime.Remoting.Messaging.CallContext.LogicalSetData("name", "from main thread 2");
             
-            // Thread.CurrentPrincipal устанавливает Principal для текущего потока и далее он копируется в дочерние потоки (то же верно для контекста)
-            // то же со всем контекстом исполнения
+            // Thread.CurrentPrincipal sets Principal for the current thread and then it`s copied to child treads
+            // the same is true for the context
 
             ShowCurrentThreadContext(); // "ContextID: 0"; kamil
 
@@ -95,6 +95,41 @@ namespace ExecutionContextTest
             ShowCurrentThreadContext();
         }
 
+        [ThreadStatic] public static int Value;
+
+        private static void TestTlsForThread()
+        {
+            Value = 10;
+            Console.WriteLine($"Value = {Value}"); // shows 10
+            var newThread = new Thread(() =>
+            {
+                Console.WriteLine($"Value = {Value}"); // show 0, as expected since a new thread is started
+            });
+
+            newThread.Start();
+            newThread.Join();
+        }
+
+        private static void TestTlsForTask()
+        {
+            Value = 10;
+            Console.WriteLine($"Value = {Value}"); // shows 10
+            var t = Task.Run(() =>
+            {
+                Console.WriteLine($"Value = {Value}"); // show 0, as expected since a new thread is started
+            });
+
+            t.Wait();
+        }
+        
+        private static async Task TestTlsForTaskWithAsync()
+        {
+            Value = 10;
+            Console.WriteLine($"Value = {Value}\n"); // shows 10
+            await Task.Delay(1000);
+            Console.WriteLine($"Value = {Value}"); // show 0...
+        }
+        
         private static void ShowCurrentThreadContext()
         {
             Console.WriteLine(Thread.CurrentThread.ExecutionContext.GetHashCode());
